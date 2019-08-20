@@ -1,0 +1,42 @@
+#root {
+    background-image: url('../../Assests/Images/akOpt.jpg');
+    background-size: cover;
+}
+
+#aboutWrapperAnimation{
+    background-color: rgba(000, 000, 000, .5);
+}
+
+#profilePic {
+    width: 20vw;
+    height: 20vw;
+    box-shadow: 5px 7px 2px 1px rgba(0, 0, 0, .5);
+    border-radius: 50%;
+    margin: 0 auto;
+    margin-left: 37.5vw;
+}
+
+#contactPhone, #contactEmail, #contactLinkedin, #contactGithub{
+    margin: 5px;
+    cursor: pointer;
+    // user-select: all;
+    float: left;
+    width: 5%;
+    margin-left: 15vw;
+    filter: invert(90%);
+}
+
+.linkHover {
+    width: 100%;
+    height: 100%;
+    // margin-left: 50vw;
+    // display: block;
+}
+
+.aboutText {
+    display: inline-block;
+    // background-color: rgba(255, 255, 255, .7);
+    margin: 30px;
+    text-align: center;
+    color: white;
+}

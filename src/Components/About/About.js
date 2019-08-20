@@ -1,7 +1,7 @@
 import React from "react";
 import "./about.css";
 
-import profilePic from "../../Assests/Images/profile-pic.jpg";
+import profilePic from "../../Assests/Images/profile-pic-resize.jpg";
 
 import phone from "../../Assests/Images/Icons/phone.png";
 import email from "../../Assests/Images/Icons/email.png";
@@ -27,18 +27,18 @@ class AboutPage extends React.Component {
               <div id="contactPhone">
                 {/* <br> */}
                 <img
-                  class="linkHover"
+                  className="linkHover"
                   src={phone}
-                  onclick="window.open('tel:7153162544');"
+                  // onClick="window.open('tel:7153162544');"
                   alt="phone"
                 />
-                <p>715-316-2544</p>
+                {/* <p>715-316-2544</p> */}
               </div>
 
               <div id="contactEmail">
                 {/* <br> */}
                 <img
-                  class="linkHover"
+                  className="linkHover"
                   id="emailImg"
                   src={email}
                   alt="email"
@@ -50,19 +50,18 @@ class AboutPage extends React.Component {
               <div id="contactLinkedin">
                 {/* <br> */}
                 <img
-                  class="linkHover"
+                  className="linkHover"
                   id="linkedinUrl"
                   src={linkedin}
                   alt="linkedin"
                 />
-
                 {/* <p style="user-select:all">https://www.linkedin.com/in/jacob-haas-909b05172/</p> */}
               </div>
 
               <div id="contactGithub">
                 {/* <br> */}
                 <img
-                  class="linkHover"
+                  className="linkHover"
                   id="githubUrl"
                   src={github}
                   alt="github"
@@ -71,7 +70,7 @@ class AboutPage extends React.Component {
               </div>
             </div>
           </div>
-          <div class="aboutText">
+          <div className="aboutText">
             <p>
               My name is Jacob, I am a full stack web developer and specialize
               in front-end web development. I enjoy working with CSS to create
