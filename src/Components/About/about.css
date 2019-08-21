@@ -17,14 +17,87 @@
   margin-left: 37.5vw;
 }
 
-#contactPhone, #contactEmail, #contactLinkedin, #contactGithub {
+#contactPhone,
+#contactEmail,
+#contactLinkedin,
+#contactGithub {
   margin: 5px;
   cursor: pointer;
   float: left;
   width: 5%;
   margin-left: 15vw;
+  padding-top: 75px;
   -webkit-filter: invert(90%);
           filter: invert(90%);
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  -webkit-box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+          box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  position: relative;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: transform;
+  -webkit-transition-property: -webkit-transform;
+  transition-property: -webkit-transform;
+  transition-property: transform;
+  transition-property: transform, -webkit-transform;
+}
+
+#contactPhone:before,
+#contactEmail:before,
+#contactLinkedin:before,
+#contactGithub:before {
+  pointer-events: none;
+  position: absolute;
+  z-index: -1;
+  content: "";
+  top: 100%;
+  left: 5%;
+  height: 10px;
+  width: 90%;
+  opacity: 0;
+  background: radial-gradient(ellipse at center, rgba(0, 0, 0, 0.35) 0%, rgba(0, 0, 0, 0) 80%);
+  /* W3C */
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: transform, opacity;
+  -webkit-transition-property: opacity, -webkit-transform;
+  transition-property: opacity, -webkit-transform;
+  transition-property: transform, opacity;
+  transition-property: transform, opacity, -webkit-transform;
+}
+
+#contactPhone:hover, #contactPhone:focus, #contactPhone:active,
+#contactEmail:hover,
+#contactEmail:focus,
+#contactEmail:active,
+#contactLinkedin:hover,
+#contactLinkedin:focus,
+#contactLinkedin:active,
+#contactGithub:hover,
+#contactGithub:focus,
+#contactGithub:active {
+  -webkit-transform: translateY(-5px);
+  transform: translateY(-5px);
+  /* move the element up by 5px */
+}
+
+#contactPhone:hover:before, #contactPhone:focus:before, #contactPhone:active:before,
+#contactEmail:hover:before,
+#contactEmail:focus:before,
+#contactEmail:active:before,
+#contactLinkedin:hover:before,
+#contactLinkedin:focus:before,
+#contactLinkedin:active:before,
+#contactGithub:hover:before,
+#contactGithub:focus:before,
+#contactGithub:active:before {
+  opacity: 1;
+  -webkit-transform: translateY(5px);
+  transform: translateY(5px);
+  /* move the element down by 5px (it will stay in place because it's attached to the element that also moves up 5px) */
 }
 
 .linkHover {
@@ -37,5 +110,9 @@
   margin: 30px;
   text-align: center;
   color: white;
+  font-family: 'Lexend Deca', sans-serif;
+  font-size: calc(0.8rem + 1vw);
+  padding-top: 25px;
+  padding-bottom: 50px;
 }
 /*# sourceMappingURL=about.css.map */

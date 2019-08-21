@@ -8,19 +8,19 @@ import email from "../../Assests/Images/Icons/email.png";
 import linkedin from "../../Assests/Images/Icons/linkedin.png";
 import github from "../../Assests/Images/Icons/github.png";
 
+
 class AboutPage extends React.Component {
   render() {
     return (
       <div id="aboutWrapper">
         <div id="aboutWrapperAnimation">
           <div id="aboutTitle">
-            <br />
-            <h2>About Me</h2>
+            <br /><br/><br/>
             <img id="profilePic" src={profilePic} alt="profile picture" />
           </div>
           <div id="contactBody">
             <div id="contactBodyInner">
-              <h4>Jacob Haas</h4>
+              {/* <h4>Jacob Haas</h4> */}
               {/* <a href="./assests/docs/Resume_8-19.pdf" download="Jacobs Resume">Resume (PDF)</a> */}
               {/* <br><br> */}
 
@@ -29,20 +29,20 @@ class AboutPage extends React.Component {
                 <img
                   className="linkHover"
                   src={phone}
-                  // onClick="window.open('tel:7153162544');"
+                  onClick="window.open('tel:7153162544');"
                   alt="phone"
                 />
                 {/* <p>715-316-2544</p> */}
               </div>
 
-              <div id="contactEmail">
+              <div id="contactEmail" className="hvr-float-shadow">
                 {/* <br> */}
                 <img
                   className="linkHover"
                   id="emailImg"
                   src={email}
                   alt="email"
-                  href="mailto:jacob_haas@live.com"
+                  href="mailto:jacob_haas@live.com" target="_top"
                 />
                 {/* <p style="user-select:all">jacob@jhaas.dev</p> */}
               </div>

@@ -1,42 +1,107 @@
-#root {
-    background-image: url('../../Assests/Images/akOpt.jpg');
-    background-size: cover;
+@import'../Mixins/mixins.scss';
+
+@mixin float-shadow {
+  @include hacks();
+  position: relative;
+  @include prefixed(transition-duration, $mediumDuration);
+  @include prefixed(transition-property, transform);
+
+  &:before {
+    pointer-events: none;
+    position: absolute;
+    z-index: -1;
+    content: "";
+    top: 100%;
+    left: 5%;
+    height: 10px;
+    width: 90%;
+    opacity: 0;
+    background: -webkit-radial-gradient(
+      center,
+      ellipse,
+      rgba(0, 0, 0, 0.35) 0%,
+      rgba(0, 0, 0, 0) 80%
+    );
+    background: radial-gradient(
+      ellipse at center,
+      rgba(0, 0, 0, 0.35) 0%,
+      rgba(0, 0, 0, 0) 80%
+    ); /* W3C */
+    @include prefixed(transition-duration, $mediumDuration);
+    @include prefixed(transition-property, "transform, opacity");
+  }
+
+  &:hover,
+  &:focus,
+  &:active {
+    @include prefixed(
+      transform,
+      translateY(-5px)
+    ); /* move the element up by 5px */
+
+    &:before {
+      opacity: 1;
+      @include prefixed(
+        transform,
+        translateY(5px)
+      ); /* move the element down by 5px (it will stay in place because it's attached to the element that also moves up 5px) */
+    }
+  }
 }
 
-#aboutWrapperAnimation{
-    background-color: rgba(000, 000, 000, .5);
+
+
+
+
+
+#root {
+  background-image: url("../../Assests/Images/akOpt.jpg");
+  background-size: cover;
+}
+
+#aboutWrapperAnimation {
+  background-color: rgba(000, 000, 000, 0.5);
 }
 
 #profilePic {
-    width: 20vw;
-    height: 20vw;
-    box-shadow: 5px 7px 2px 1px rgba(0, 0, 0, .5);
-    border-radius: 50%;
-    margin: 0 auto;
-    margin-left: 37.5vw;
+  width: 20vw;
+  height: 20vw;
+  box-shadow: 5px 7px 2px 1px rgba(0, 0, 0, 0.5);
+  border-radius: 50%;
+  margin: 0 auto;
+  margin-left: 37.5vw;
 }
 
-#contactPhone, #contactEmail, #contactLinkedin, #contactGithub{
-    margin: 5px;
-    cursor: pointer;
-    // user-select: all;
-    float: left;
-    width: 5%;
-    margin-left: 15vw;
-    filter: invert(90%);
+#contactPhone,
+#contactEmail,
+#contactLinkedin,
+#contactGithub {
+  margin: 5px;
+  cursor: pointer;
+  // user-select: all;
+  float: left;
+  width: 5%;
+  margin-left: 15vw;
+  padding-top: 75px;
+  filter: invert(90%);
+  @include float-shadow;
 }
 
 .linkHover {
-    width: 100%;
-    height: 100%;
-    // margin-left: 50vw;
-    // display: block;
+  width: 100%;
+  height: 100%;
+  // margin-left: 50vw;
+  // display: block;
 }
 
 .aboutText {
-    display: inline-block;
-    // background-color: rgba(255, 255, 255, .7);
-    margin: 30px;
-    text-align: center;
-    color: white;
+  display: inline-block;
+  // background-color: rgba(255, 255, 255, .7);
+  margin: 30px;
+  text-align: center;
+  color: white;
+  font-family: 'Lexend Deca', sans-serif;
+  font-size: calc(0.8rem + 1vw);
+  padding-top: 25px;
+  padding-bottom: 50px;
 }
