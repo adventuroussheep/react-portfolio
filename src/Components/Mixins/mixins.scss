@@ -20,6 +20,7 @@
   @include hardwareAccel();
   @include improveAntiAlias();
 }
+
 @mixin prefixed($property, $value) {
   @if $webkit == true {
     -webkit-#{$property}: #{$value};
@@ -39,6 +40,7 @@
 
   #{$property}: #{$value};
 }
+
 @mixin keyframes($name) {
   @if $webkit == true {
     @-webkit-keyframes #{$name} {
@@ -70,28 +72,6 @@
 }
 
 
-// prefix declarations
-@mixin prefixed($property, $value) {
-    @if $webkit == true {
-      -webkit-#{$property}: #{$value};
-    }
-  
-    @if $moz == true {
-      -moz-#{$property}: #{$value};
-    }
-  
-    @if $ms == true {
-      -ms-#{$property}: #{$value};
-    }
-  
-    @if $o == true {
-      -o-#{$property}: #{$value};
-    }
-  
-    #{$property}: #{$value};
-  }
-  
-
   // DEFAULT OPTIONS
 
 // Prefix for Hover class names
@@ -106,7 +86,7 @@ $slowDuration: .5s !default;
 $primaryColor: #e1e1e1 !default;
 $secondaryColor: #666 !default;
 $highlightColor: #ccc !default;
-$activeColor: #2098D1 !default;
+$activeColor: #138496 !default;
 $shadowColor: rgba(0, 0, 0, .6) !default;
 
 // Speech bubbles options

@@ -8,10 +8,15 @@ class Navbar extends React.Component {
         <a className="navbar-brand" href="#">
           Jacob Haas
         </a>
+        <div className="">
         <button className="buttonClass">Hello</button>
-        <button type="button" className="btn btn-info">Info</button>
-<button type="button" className="btn btn-light">Light</button>
-<button type="button" className="btn btn-dark">Dark</button>
+        <button className="buttonClass">Hello</button>
+        <button className="buttonClass">Hello</button>
+        <button className="buttonClass">Hello</button>
+        </div>
+        {/* <button type="button" className="btn btn-info">Info</button> */}
+{/* <button type="button" className="btn btn-light">Light</button> */}
+{/* <button type="button" className="btn btn-dark">Dark</button> */}
       </nav>
     );
   }
