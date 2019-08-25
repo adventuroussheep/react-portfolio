@@ -11,6 +11,10 @@ function App() {
         <Navbar/>
       </header>
       <AboutPage/>
+      <div>
+        <h1>Projects</h1>
+      </div>
+      <Projects/>
     </div>
   );
 }

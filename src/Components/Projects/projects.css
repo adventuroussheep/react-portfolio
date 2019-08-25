@@ -1,1 +1,94 @@
-/* No CSS *//*# sourceMappingURL=projects.css.map */
+.Wrapper {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 10% auto auto 10%;
+      grid-template-columns: 10% auto auto 10%;
+  -ms-grid-rows: auto auto auto auto;
+      grid-template-rows: auto auto auto auto;
+  grid-gap: 3em;
+  background: url("../../Assests/Images/orOpt.jpg");
+  background-size: cover;
+}
+
+.Wrapper .plantifyOverlay {
+  position: relative;
+  z-index: 10;
+}
+
+.Wrapper .plantifyOverlay:hover span {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  -webkit-box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+          box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  position: relative;
+  -webkit-transition-property: color;
+  transition-property: color;
+  -webkit-transition-duration: 0.5s;
+  transition-duration: 0.5s;
+}
+
+.Wrapper .plantifyOverlay:hover span:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #138496;
+  -webkit-transform: scaleY(0);
+  transform: scaleY(0);
+  -webkit-transform-origin: 50% 0;
+  transform-origin: 50% 0;
+  -webkit-transition-property: transform;
+  -webkit-transition-property: -webkit-transform;
+  transition-property: -webkit-transform;
+  transition-property: transform;
+  transition-property: transform, -webkit-transform;
+  -webkit-transition-duration: 0.5s;
+  transition-duration: 0.5s;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+}
+
+.Wrapper .plantifyOverlay:hover span:hover, .Wrapper .plantifyOverlay:hover span:focus, .Wrapper .plantifyOverlay:hover span:active {
+  color: white;
+}
+
+.Wrapper .plantifyOverlay:hover span:hover:before, .Wrapper .plantifyOverlay:hover span:focus:before, .Wrapper .plantifyOverlay:hover span:active:before {
+  -webkit-transform: scaleY(1);
+  transform: scaleY(1);
+  -webkit-transition-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66);
+  transition-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66);
+}
+
+.Wrapper .slider {
+  position: absolute;
+  z-index: 21;
+}
+
+.Wrapper div:hover span {
+  display: initial;
+}
+
+.Wrapper img {
+  position: relative;
+  margin-top: 20px;
+  width: 100%;
+  z-index: 2;
+}
+
+.Wrapper span {
+  position: absolute;
+  color: white;
+  height: 200%;
+  width: 100%;
+  padding: 30px;
+  left: 0;
+  top: 0;
+  z-index: 3;
+  display: none;
+}
+/*# sourceMappingURL=projects.css.map */

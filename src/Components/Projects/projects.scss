@@ -1,0 +1,91 @@
+@import'../Mixins/mixins.scss';
+
+@mixin bounce-to-bottom {
+	@include hacks();
+	position: relative;
+	@include prefixed(transition-property, color);
+	@include prefixed(transition-duration, $slowDuration);
+
+	&:before {
+		content: "";
+		position: absolute;
+		z-index: -1;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		background: $activeColor;
+		@include prefixed(transform, scaleY(0));
+		@include prefixed(transform-origin, 50% 0);
+		@include prefixed(transition-property, transform);
+		@include prefixed(transition-duration, $slowDuration);
+		@include prefixed(transition-timing-function, ease-out);
+	}
+
+	&:hover,
+	&:focus,
+	&:active {
+		color: white;
+
+		&:before {
+			@include prefixed(transform, scaleY(1));
+			@include prefixed(transition-timing-function, cubic-bezier(.52,1.64,.37,.66));
+		}
+	}
+}
+
+
+.Wrapper{ 
+    display: grid;
+    grid-template-columns: 10% auto auto 10%;
+    grid-template-rows: auto auto auto auto;
+    grid-gap: 3em;  
+    background: url("../../Assests/Images/orOpt.jpg");
+    background-size: cover;
+
+
+    .plantifyOverlay{
+        position: relative;
+        z-index: 10;
+    } 
+
+    .plantifyOverlay:hover span{
+        @include bounce-to-bottom();        
+    }
+    
+    
+    .slider{
+        position: absolute;
+        z-index: 21;
+    }
+    
+    
+    
+    div:hover span{
+        display: initial;
+        // top: -150px;
+    }
+    
+    img {
+        position: relative;
+        margin-top: 20px;
+        width: 100%;
+        z-index: 2;
+    }
+    
+    span {
+        position: absolute;
+        color: white;
+        // height: calc(100% - 20px);
+        height: 200%;
+        width: 100%;
+        padding: 30px;
+        // background: rgba(rgb(0, 0, 0), .3);
+        left: 0;
+        top: 0;
+        z-index: 3;
+        display: none;
+        // transition: all 2s ease-in;
+        // @include bounce-to-bottom();
+    }
+}
