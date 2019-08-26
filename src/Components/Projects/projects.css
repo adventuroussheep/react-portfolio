@@ -16,28 +16,53 @@
 }
 
 .Wrapper .plantifyOverlay:hover span {
+  visibility: initial;
+  display: initial;
+}
+
+.Wrapper .slider {
+  position: absolute;
+  z-index: 9;
+}
+
+.Wrapper img {
+  position: relative;
+  margin-top: 20px;
+  width: 100%;
+  z-index: 2;
+}
+
+.Wrapper span {
+  position: absolute;
+  color: white;
+  padding: 50px;
+  height: 100%;
+  width: 100%;
+  left: 0;
+  top: 0;
+  z-index: 3;
+  visibility: hidden;
   display: inline-block;
   vertical-align: middle;
   -webkit-transform: perspective(1px) translateZ(0);
   transform: perspective(1px) translateZ(0);
   -webkit-box-shadow: 0 0 1px rgba(0, 0, 0, 0);
           box-shadow: 0 0 1px rgba(0, 0, 0, 0);
-  position: relative;
   -webkit-transition-property: color;
   transition-property: color;
   -webkit-transition-duration: 0.5s;
   transition-duration: 0.5s;
 }
 
-.Wrapper .plantifyOverlay:hover span:before {
+.Wrapper span:before {
   content: "";
   position: absolute;
   z-index: -1;
-  top: 0;
+  top: 20px;
   left: 0;
   right: 0;
   bottom: 0;
-  background: #138496;
+  background: rgba(0, 0, 0, 0.7);
   -webkit-transform: scaleY(0);
   transform: scaleY(0);
   -webkit-transform-origin: 50% 0;
@@ -53,42 +78,14 @@
   transition-timing-function: ease-out;
 }
 
-.Wrapper .plantifyOverlay:hover span:hover, .Wrapper .plantifyOverlay:hover span:focus, .Wrapper .plantifyOverlay:hover span:active {
+.Wrapper span:hover, .Wrapper span:focus, .Wrapper span:active {
   color: white;
 }
 
-.Wrapper .plantifyOverlay:hover span:hover:before, .Wrapper .plantifyOverlay:hover span:focus:before, .Wrapper .plantifyOverlay:hover span:active:before {
+.Wrapper span:hover:before, .Wrapper span:focus:before, .Wrapper span:active:before {
   -webkit-transform: scaleY(1);
   transform: scaleY(1);
   -webkit-transition-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66);
   transition-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66);
-}
-
-.Wrapper .slider {
-  position: absolute;
-  z-index: 21;
-}
-
-.Wrapper div:hover span {
-  display: initial;
-}
-
-.Wrapper img {
-  position: relative;
-  margin-top: 20px;
-  width: 100%;
-  z-index: 2;
-}
-
-.Wrapper span {
-  position: absolute;
-  color: white;
-  height: 200%;
-  width: 100%;
-  padding: 30px;
-  left: 0;
-  top: 0;
-  z-index: 3;
-  display: none;
 }
 /*# sourceMappingURL=projects.css.map */

@@ -13,9 +13,9 @@ class Projects extends React.Component {
             <div className="Wrapper">
                 <div></div>
                         <div className="plantifyOverlay">
+                    <div className="slider">
                         <img src={Plantify} alt="Plantify App"></img>
                         <span>Top</span>
-                    <div className="slider">
                     </div>
                 </div>
                 <div className="plantifyOverlay">
