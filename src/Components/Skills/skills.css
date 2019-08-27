@@ -1,0 +1,52 @@
+.skillsImg {
+  width: 50px;
+}
+
+.frontEndWrapper {
+  max-width: 33%;
+  text-align: center;
+  border: 2px solid black;
+  float: left;
+}
+
+.frontEnd {
+  display: -ms-grid;
+  display: grid;
+  grid-gap: 0.5em;
+  -ms-grid-columns: auto auto auto auto auto;
+      grid-template-columns: auto auto auto auto auto;
+  -ms-grid-rows: auto auto auto auto auto;
+      grid-template-rows: auto auto auto auto auto;
+}
+
+.backEndWrapper {
+  max-width: 33%;
+  text-align: center;
+  float: right;
+  border: 2px solid black;
+}
+
+.backEnd {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto auto auto;
+      grid-template-columns: auto auto auto;
+      grid-template-areas: auto auto auto;
+}
+
+.databaseWrapper {
+  max-width: 33%;
+  text-align: center;
+  float: right;
+  border: 2px solid black;
+}
+
+.database {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto auto auto;
+      grid-template-columns: auto auto auto;
+  -ms-grid-rows: auto auto;
+      grid-template-rows: auto auto;
+}
+/*# sourceMappingURL=skills.css.map */
