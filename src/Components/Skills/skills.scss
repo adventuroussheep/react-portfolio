@@ -1,45 +1,84 @@
+
 .skillsImg{
-    width: 50px;
+    width: 50%;
+}
+
+.mongoImg{
+    width: 60%;
+}
+
+.firebaseImg{
+    margin-left: 23%;
+    width: 37%;
+}
+
+.skillsWrapper{
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: 33% 33% 33%;
+    padding-bottom: 50px;
 }
 
 .frontEndWrapper{
-    max-width: 33%;
+    // max-width: 33%;
     text-align: center;
     border: 2px solid black;
-    float: left;
+    // float: left;
+    
+    &:hover{
+        width: 300%;
+        left: 0;
+        cursor: pointer;
+    }
 }
 
+.frontEndWrapper:hover + .databaseWrapper{
+    display: none;
+}
+.frontEndWrapper:hover + .backEndWrapper{
+    display: none;
+}
+
+.backEndWrapper:hover + .frontEndWrapper{
+    display: none;
+}
+
+
+
+
 .frontEnd{
-    // overflow: hidden;
+    justify-items: center;
     display: grid;
-    grid-gap: 0.5em;
+    grid-gap: 1vw;
     grid-template-columns: auto auto auto auto auto;
     grid-template-rows: auto auto auto auto auto;
 
 }
 
 .backEndWrapper{
-    max-width: 33%;
     text-align: center;
-    float: right;
     border: 2px solid black;
-
+    
+    &:hover + .databaseWrapper{
+        display: none;
+    }
 }
 
 .backEnd{
+    justify-items: center;
     display: grid;
     grid-template-columns: auto auto auto;
-    grid-template-areas: auto auto auto;
+    grid-template-rows: auto auto auto;
 }
 
 .databaseWrapper{
-    max-width: 33%;
     text-align: center;
-    float: right;
     border: 2px solid black;
+    // display: none;
 }
 
 .database{
+    justify-items: center;
     display: grid;
     grid-template-columns: auto auto auto;
     grid-template-rows: auto auto;
