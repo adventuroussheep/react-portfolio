@@ -16,7 +16,7 @@ class AboutPage extends React.Component {
         <div id="aboutWrapperAnimation">
           <div id="aboutTitle">
             <br /><br/><br/>
-            <img id="profilePic" src={profilePic} alt="profile picture" />
+            <img id="profilePic" src={profilePic} alt="profile" />
           </div>
           <div id="contactBody">
             <div id="contactBodyInner">

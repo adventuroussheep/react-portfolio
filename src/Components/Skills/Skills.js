@@ -30,7 +30,7 @@ class Skills extends React.Component {
       <div className="skillsWrapper">
 
           
-        <div className="databaseWrapper">
+        <div className="databaseWrapper hoverFrontend hoverBackend">
           <h1>Database</h1>
           <div class="database">
             <img src={mysql} className="skillsImg imgResize" alt="mysql"></img>
@@ -51,7 +51,7 @@ class Skills extends React.Component {
           </div>
         </div>
 
-        <div className="frontEndWrapper">
+        <div className="frontEndWrapper hoverDatabase hoverBackend">
           <h1>Front-End</h1>
           <div className="frontEnd">
             <div></div>
@@ -84,7 +84,7 @@ class Skills extends React.Component {
           </div>
         </div>
 
-        <div className="backEndWrapper">
+        <div className="backEndWrapper hoverFrontend hoverDatabase">
           <h1>Back-End</h1>
           <div className="backEnd">
             <div></div>

@@ -24,24 +24,26 @@
 .frontEndWrapper {
   text-align: center;
   border: 2px solid black;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
 }
 
 .frontEndWrapper:hover {
-  width: 300%;
+  transform: scale(1);
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
   left: 0;
+  position: absolute;
   cursor: pointer;
 }
 
-.frontEndWrapper:hover + .databaseWrapper {
+.frontEndWrapper:hover + .hoverFrontend {
   display: none;
 }
 
-.frontEndWrapper:hover + .backEndWrapper {
+.backEndWrapper:hover + .hoverBackend {
   display: none;
-}
-
-.backEndWrapper:hover + .frontEndWrapper {
-  display: none;
+  cursor: pointer;
 }
 
 .frontEnd {
@@ -58,10 +60,6 @@
 .backEndWrapper {
   text-align: center;
   border: 2px solid black;
-}
-
-.backEndWrapper:hover + .databaseWrapper {
-  display: none;
 }
 
 .backEnd {
