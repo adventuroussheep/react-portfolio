@@ -28,22 +28,16 @@
   transition: all 0.5s ease-in-out;
 }
 
-.frontEndWrapper:hover {
-  transform: scale(1);
-  -webkit-transform: scale(1);
-  -ms-transform: scale(1);
-  left: 0;
-  position: absolute;
-  cursor: pointer;
+.databaseWrapper:hover + #feId {
+  color: white;
 }
 
-.frontEndWrapper:hover + .hoverFrontend {
-  display: none;
+.frontEndWrapper:hover + .databaseWrapper {
+  color: white;
 }
 
-.backEndWrapper:hover + .hoverBackend {
-  display: none;
-  cursor: pointer;
+.backEndWrapper:hover + .frontEndWrapper {
+  color: white;
 }
 
 .frontEnd {
@@ -58,8 +52,11 @@
 }
 
 .backEndWrapper {
+  width: 33%;
   text-align: center;
   border: 2px solid black;
+  margin-left: 33%;
+  position: absolute;
 }
 
 .backEnd {

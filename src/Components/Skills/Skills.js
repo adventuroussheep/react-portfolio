@@ -29,77 +29,80 @@ class Skills extends React.Component {
     return (
       <div className="skillsWrapper">
 
-          
-        <div className="databaseWrapper hoverFrontend hoverBackend">
+        <div className="databaseWrapper" id="dbId">
           <h1>Database</h1>
           <div class="database">
             <img src={mysql} className="skillsImg imgResize" alt="mysql"></img>
-            <div></div>
+            <grid-item></grid-item>
             <img
               src={mongodb}
               className="skillsImg mongoImg"
               alt="mongodb"
             ></img>
 
-            <div></div>
+            <grid-item></grid-item>
             <img
               src={firebase}
               className="skillsImg firebaseImg imgResize"
               alt="firebase"
             ></img>
-            <div></div>
+            <grid-item></grid-item>
           </div>
         </div>
 
-        <div className="frontEndWrapper hoverDatabase hoverBackend">
+
+        <div className="frontEndWrapper" id="feId">
           <h1>Front-End</h1>
           <div className="frontEnd">
-            <div></div>
-            <div></div>
+            <grid-item></grid-item>
+            <grid-item></grid-item>
             <img src={bootstrap} className="skillsImg" alt="bootstrap"></img>
-            <div></div>
-            <div></div>
+            <grid-item></grid-item>
+            <grid-item></grid-item>
 
-            <div></div>
+            <grid-item></grid-item>
             <img src={css} className="skillsImg" alt="css"></img>
-            <div></div>
+            <grid-item></grid-item>
             <img src={cssgrid} className="skillsImg" alt="cssgrid"></img>
-            <div></div>
+            <grid-item></grid-item>
 
             <img src={html} className="skillsImg" alt="html"></img>
-            <div></div>
+            <grid-item></grid-item>
             <img src={javascript} className="skillsImg" alt="javascript"></img>
-            <div></div>
+            <grid-item></grid-item>
             <img src={jquery} className="skillsImg" alt="jquery"></img>
 
-            <div></div>
+            <grid-item></grid-item>
             <img src={materialui} className="skillsImg" alt="materialui"></img>
-            <div></div>
+            <grid-item></grid-item>
             <img src={sass} className="skillsImg" alt="sass"></img>
-            <div></div>
+            <grid-item></grid-item>
 
-            <div></div>
-            <div></div>
+            <grid-item></grid-item>
+            <grid-item></grid-item>
             <img src={react} className="skillsImg" alt="react"></img>
-          </div>
+          {/* </div> */}
         </div>
 
-        <div className="backEndWrapper hoverFrontend hoverDatabase">
+
+        <div className="backEndWrapper" id="beId">
           <h1>Back-End</h1>
           <div className="backEnd">
-            <div></div>
+          <grid-item></grid-item>
             <img src={ajax} className="skillsImg imgResize" alt="ajax"></img>
-            <div></div>
+            <grid-item></grid-item>
 
             <img src={api} className="skillsImg imgResize" alt="api"></img>
-            <div></div>
+            <grid-item></grid-item>
             <img src={json} className="skillsImg imgResize" alt="json"></img>
 
-            <div></div>
+            <grid-item></grid-item>
             <img src={node} className="skillsImg imgResize" alt="node"></img>
-            <div></div>
+            <grid-item></grid-item>
           </div>
         </div>
+
+      </div>
       </div>
     );
   }
