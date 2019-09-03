@@ -24,12 +24,69 @@ import mysql from "../../Assests/Images/Skills/mysql.png";
 import mongodb from "../../Assests/Images/Skills/mongodb.png";
 import firebase from "../../Assests/Images/Skills/firebase.png";
 
+
 class Skills extends React.Component {
+
+  
+
+  constructor(props){
+    super(props)
+    this.state = {
+      hover1: false,
+      hover2: false,
+      hover3: false
+    }
+    this.toggleHover1 = this.toggleHover1.bind(this);
+    this.toggleHover2 = this.toggleHover2.bind(this);
+    this.toggleHover3 = this.toggleHover3.bind(this);
+  }
+  
+  toggleHover1(){
+    this.setState({hover1: !this.state.hover1})
+  }
+
+  toggleHover2(){
+    this.setState({hover2: !this.state.hover2})
+  }
+
+
+  toggleHover3(){
+    this.setState({hover3: !this.state.hover3})
+  }
+
+
+
+
   render() {
+
+    var Style1;
+    if (this.state.hover1){
+      Style1 = {visibility: 'hidden'}
+    // } else {
+    //   Style1 = {visibility: 'hiddenne-grid'}
+    }
+
+
+    var Style2;
+    if (this.state.hover2){
+      Style2 = {visibility: 'hidden'}
+    // } else {
+    //   Style2 = {visibility: 'hiddenne-grid'}
+    }
+
+
+    var Style3;
+    if (this.state.hover3){
+      Style3 = {visibility: 'hidden'}
+    // } else {
+    //   Style3 = {visibility: 'hiddenne-grid'}
+    }
+
+
     return (
       <div className="skillsWrapper">
 
-        <div className="databaseWrapper" id="dbId">
+        <div style={{...Style2, ...Style3}} onMouseEnter={this.toggleHover1} onMouseLeave={this.toggleHover1} className="databaseWrapper">
           <h1>Database</h1>
           <div class="database">
             <img src={mysql} className="skillsImg imgResize" alt="mysql"></img>
@@ -51,7 +108,7 @@ class Skills extends React.Component {
         </div>
 
 
-        <div className="frontEndWrapper" id="feId">
+        <div style={{...Style1, ...Style3}} onMouseEnter={this.toggleHover2} onMouseLeave={this.toggleHover2}  className="frontEndWrapper" id="feId">
           <h1>Front-End</h1>
           <div className="frontEnd">
             <grid-item></grid-item>
@@ -81,11 +138,11 @@ class Skills extends React.Component {
             <grid-item></grid-item>
             <grid-item></grid-item>
             <img src={react} className="skillsImg" alt="react"></img>
-          {/* </div> */}
+          </div>
         </div>
 
 
-        <div className="backEndWrapper" id="beId">
+        <div style={{...Style1, ...Style2}} onMouseEnter={this.toggleHover3} onMouseLeave={this.toggleHover3} className="backEndWrapper" id="beId">
           <h1>Back-End</h1>
           <div className="backEnd">
           <grid-item></grid-item>
@@ -102,7 +159,6 @@ class Skills extends React.Component {
           </div>
         </div>
 
-      </div>
       </div>
     );
   }

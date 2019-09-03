@@ -28,8 +28,14 @@
   transition: all 0.5s ease-in-out;
 }
 
-.databaseWrapper:hover + #feId {
-  color: white;
+.frontEndWrapper:hover {
+  width: 100%;
+  transform: scale(1);
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  left: 0;
+  position: absolute;
+  z-index: 20;
 }
 
 .frontEndWrapper:hover + .databaseWrapper {
@@ -52,11 +58,18 @@
 }
 
 .backEndWrapper {
-  width: 33%;
   text-align: center;
   border: 2px solid black;
-  margin-left: 33%;
+}
+
+.backEndWrapper:hover {
+  width: 100%;
+  transform: scale(1);
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  left: 0;
   position: absolute;
+  z-index: 20;
 }
 
 .backEnd {
@@ -72,6 +85,17 @@
 .databaseWrapper {
   text-align: center;
   border: 2px solid black;
+  width: 100%;
+  -webkit-transform: scale(0.8);
+          transform: scale(0.8);
+}
+
+.databaseWrapper:hover {
+  background-color: black;
+  width: 120%;
+  left: 0;
+  position: absolute;
+  z-index: 20;
 }
 
 .database {
