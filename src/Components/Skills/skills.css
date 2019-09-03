@@ -23,7 +23,6 @@
 
 .frontEndWrapper {
   text-align: center;
-  border: 2px solid black;
   -webkit-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
 }
@@ -59,7 +58,6 @@
 
 .backEndWrapper {
   text-align: center;
-  border: 2px solid black;
 }
 
 .backEndWrapper:hover {
@@ -84,15 +82,21 @@
 
 .databaseWrapper {
   text-align: center;
-  border: 2px solid black;
-  width: 100%;
-  -webkit-transform: scale(0.8);
-          transform: scale(0.8);
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: 1/1/1/1;
+  width: 33vw;
+  -webkit-transition: transform 2s ease-in-out;
+  -webkit-transition: -webkit-transform 2s ease-in-out;
+  transition: -webkit-transform 2s ease-in-out;
+  transition: transform 2s ease-in-out;
+  transition: transform 2s ease-in-out, -webkit-transform 2s ease-in-out;
 }
 
 .databaseWrapper:hover {
   background-color: black;
-  width: 120%;
+  -webkit-transform: scale(2) translate(16.5vw, 20%);
+          transform: scale(2) translate(16.5vw, 20%);
   left: 0;
   position: absolute;
   z-index: 20;

@@ -61,25 +61,25 @@ class Skills extends React.Component {
 
     var Style1;
     if (this.state.hover1){
-      Style1 = {visibility: 'hidden'}
+      Style1 = {display: 'none'}
     // } else {
-    //   Style1 = {visibility: 'hiddenne-grid'}
+    //   Style1 = {display: 'inline-grid'}
     }
 
 
     var Style2;
     if (this.state.hover2){
-      Style2 = {visibility: 'hidden'}
+      Style2 = {display: 'none'}
     // } else {
-    //   Style2 = {visibility: 'hiddenne-grid'}
+    //   Style2 = {display: 'inline-grid'}
     }
 
 
     var Style3;
     if (this.state.hover3){
-      Style3 = {visibility: 'hidden'}
+      Style3 = {display: 'none'}
     // } else {
-    //   Style3 = {visibility: 'hiddenne-grid'}
+    //   Style3 = {display: 'inline-grid'}
     }
 
 
