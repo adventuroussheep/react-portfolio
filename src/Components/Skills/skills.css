@@ -9,40 +9,41 @@
 .firebaseImg {
   margin-left: 23%;
   width: 37%;
+  -webkit-transition: transform 2s ease-in-out;
+  -webkit-transition: -webkit-transform 2s ease-in-out;
+  transition: -webkit-transform 2s ease-in-out;
+  transition: transform 2s ease-in-out;
+  transition: transform 2s ease-in-out, -webkit-transform 2s ease-in-out;
 }
 
 .skillsWrapper {
   display: -ms-grid;
   display: grid;
-  -ms-grid-rows: auto;
-      grid-template-rows: auto;
+  -ms-grid-rows: 33% auto;
+      grid-template-rows: 33% auto;
   -ms-grid-columns: 33% 33% 33%;
       grid-template-columns: 33% 33% 33%;
   padding-bottom: 50px;
+  min-height: 500px;
 }
 
 .frontEndWrapper {
   text-align: center;
-  -webkit-transition: all 0.5s ease-in-out;
-  transition: all 0.5s ease-in-out;
+  left: 33vw;
+  width: 33vw;
+  -webkit-transition: transform 2s ease-in-out;
+  -webkit-transition: -webkit-transform 2s ease-in-out;
+  transition: -webkit-transform 2s ease-in-out;
+  transition: transform 2s ease-in-out;
+  transition: transform 2s ease-in-out, -webkit-transform 2s ease-in-out;
 }
 
 .frontEndWrapper:hover {
-  width: 100%;
-  transform: scale(1);
-  -webkit-transform: scale(1);
-  -ms-transform: scale(1);
-  left: 0;
+  background-color: black;
+  -webkit-transform: scale(2) translate(0%, 20%);
+          transform: scale(2) translate(0%, 20%);
   position: absolute;
   z-index: 20;
-}
-
-.frontEndWrapper:hover + .databaseWrapper {
-  color: white;
-}
-
-.backEndWrapper:hover + .frontEndWrapper {
-  color: white;
 }
 
 .frontEnd {
@@ -58,14 +59,19 @@
 
 .backEndWrapper {
   text-align: center;
+  width: 33vw;
+  left: 66vw;
+  -webkit-transition: transform 2s ease-in-out;
+  -webkit-transition: -webkit-transform 2s ease-in-out;
+  transition: -webkit-transform 2s ease-in-out;
+  transition: transform 2s ease-in-out;
+  transition: transform 2s ease-in-out, -webkit-transform 2s ease-in-out;
 }
 
 .backEndWrapper:hover {
-  width: 100%;
-  transform: scale(1);
-  -webkit-transform: scale(1);
-  -ms-transform: scale(1);
-  left: 0;
+  background-color: black;
+  -webkit-transform: scale(2) translate(-16.5vw, 20%);
+          transform: scale(2) translate(-16.5vw, 20%);
   position: absolute;
   z-index: 20;
 }
@@ -82,15 +88,13 @@
 
 .databaseWrapper {
   text-align: center;
-  -ms-grid-row: 1;
-  -ms-grid-column: 1;
-  grid-area: 1/1/1/1;
   width: 33vw;
   -webkit-transition: transform 2s ease-in-out;
   -webkit-transition: -webkit-transform 2s ease-in-out;
   transition: -webkit-transform 2s ease-in-out;
   transition: transform 2s ease-in-out;
   transition: transform 2s ease-in-out, -webkit-transform 2s ease-in-out;
+  height: auto;
 }
 
 .databaseWrapper:hover {
@@ -100,6 +104,12 @@
   left: 0;
   position: absolute;
   z-index: 20;
+  height: auto;
+}
+
+.databaseWrapper:hover .firebaseImg {
+  -webkit-transform: translate(0%, -100%);
+          transform: translate(0%, -100%);
 }
 
 .database {
@@ -108,7 +118,7 @@
   display: grid;
   -ms-grid-columns: auto auto auto;
       grid-template-columns: auto auto auto;
-  -ms-grid-rows: auto auto;
-      grid-template-rows: auto auto;
+  -ms-grid-rows: 50% 50%;
+      grid-template-rows: 50% 50%;
 }
 /*# sourceMappingURL=skills.css.map */
