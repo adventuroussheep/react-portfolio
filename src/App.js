@@ -12,12 +12,12 @@ function App() {
         <Navbar/>
       </header>
       <AboutPage/>
+        <h1>Skills</h1>
+      <Skills/>
       <div>
         <h1>Projects</h1>
       </div>
       <Projects/>
-        <h1>Skills</h1>
-      <Skills/>
     </div>
   );
 }

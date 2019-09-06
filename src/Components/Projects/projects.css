@@ -20,9 +20,9 @@
   display: initial;
 }
 
-.Wrapper .slider {
-  position: absolute;
-  z-index: 9;
+.Wrapper .plantifyOverlay:hover .techImg {
+  visibility: initial;
+  display: initial;
 }
 
 .Wrapper img {
@@ -37,7 +37,7 @@
   color: white;
   padding: 50px;
   height: 100%;
-  width: 100%;
+  width: 100.1%;
   left: 0;
   top: 0;
   z-index: 3;
@@ -87,5 +87,14 @@
   transform: scaleY(1);
   -webkit-transition-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66);
   transition-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66);
+}
+
+.Wrapper .techImg {
+  position: absolute;
+  color: white;
+  width: 5vw;
+  left: 0;
+  z-index: 3;
+  visibility: hidden;
 }
 /*# sourceMappingURL=projects.css.map */

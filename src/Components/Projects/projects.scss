@@ -55,12 +55,11 @@
         display: initial;    
     }
     
-    
-    .slider{
-        // top: 0;
-        position: absolute;
-        z-index: 9;
+    .plantifyOverlay:hover .techImg{
+        visibility: initial;
+        display: initial;    
     }
+    
     
     
     
@@ -79,11 +78,9 @@
     span {
         position: absolute;
         color: white;
-        // height: calc(100% - 20px);
-        // height: 100%;
         padding: 50px;
         height: 100%;
-        width: 100%;
+        width: 100.1%;
         // padding: 30px;
         // background: rgba(rgb(0, 0, 0), .3);
         left: 0;
@@ -92,5 +89,21 @@
         visibility: hidden;
         // transition: all 2s ease-in;
         @include bounce-to-bottom();
+    }
+    .techImg{
+        position: absolute;
+        color: white;
+        // height: calc(100% - 20px);
+        // height: 100%;
+        width: 5vw;
+        // width: 100%;
+        // padding: 30px;
+        // background: rgba(rgb(0, 0, 0), .3);
+        left: 0;
+        // top: -60%;
+        z-index: 3;
+        visibility: hidden;
+        // transition: all 2s ease-in;
+
     }
 }

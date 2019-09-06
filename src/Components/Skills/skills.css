@@ -1,5 +1,19 @@
+.skillsBackground {
+  background: url("../../Assests/Images/borah.jpg");
+  background-size: cover;
+}
+
+.backgroundOverlay {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
 .skillsImg {
   width: 50%;
+  -webkit-transition: transform 1.5s ease-in-out;
+  -webkit-transition: -webkit-transform 1.5s ease-in-out;
+  transition: -webkit-transform 1.5s ease-in-out;
+  transition: transform 1.5s ease-in-out;
+  transition: transform 1.5s ease-in-out, -webkit-transform 1.5s ease-in-out;
 }
 
 .mongoImg {
@@ -9,98 +23,33 @@
 .firebaseImg {
   margin-left: 23%;
   width: 37%;
-  -webkit-transition: transform 2s ease-in-out;
-  -webkit-transition: -webkit-transform 2s ease-in-out;
-  transition: -webkit-transform 2s ease-in-out;
-  transition: transform 2s ease-in-out;
-  transition: transform 2s ease-in-out, -webkit-transform 2s ease-in-out;
 }
 
 .skillsWrapper {
   display: -ms-grid;
   display: grid;
-  -ms-grid-rows: 33% auto;
-      grid-template-rows: 33% auto;
+  -ms-grid-rows: 33% 67%;
+      grid-template-rows: 33% 67%;
   -ms-grid-columns: 33% 33% 33%;
       grid-template-columns: 33% 33% 33%;
   padding-bottom: 50px;
-  min-height: 500px;
-}
-
-.frontEndWrapper {
-  text-align: center;
-  left: 33vw;
-  width: 33vw;
-  -webkit-transition: transform 2s ease-in-out;
-  -webkit-transition: -webkit-transform 2s ease-in-out;
-  transition: -webkit-transform 2s ease-in-out;
-  transition: transform 2s ease-in-out;
-  transition: transform 2s ease-in-out, -webkit-transform 2s ease-in-out;
-}
-
-.frontEndWrapper:hover {
-  background-color: black;
-  -webkit-transform: scale(2) translate(0%, 20%);
-          transform: scale(2) translate(0%, 20%);
-  position: absolute;
-  z-index: 20;
-}
-
-.frontEnd {
-  justify-items: center;
-  display: -ms-grid;
-  display: grid;
-  grid-gap: 1vw;
-  -ms-grid-columns: auto auto auto auto auto;
-      grid-template-columns: auto auto auto auto auto;
-  -ms-grid-rows: auto auto auto auto auto;
-      grid-template-rows: auto auto auto auto auto;
-}
-
-.backEndWrapper {
-  text-align: center;
-  width: 33vw;
-  left: 66vw;
-  -webkit-transition: transform 2s ease-in-out;
-  -webkit-transition: -webkit-transform 2s ease-in-out;
-  transition: -webkit-transform 2s ease-in-out;
-  transition: transform 2s ease-in-out;
-  transition: transform 2s ease-in-out, -webkit-transform 2s ease-in-out;
-}
-
-.backEndWrapper:hover {
-  background-color: black;
-  -webkit-transform: scale(2) translate(-16.5vw, 20%);
-          transform: scale(2) translate(-16.5vw, 20%);
-  position: absolute;
-  z-index: 20;
-}
-
-.backEnd {
-  justify-items: center;
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: auto auto auto;
-      grid-template-columns: auto auto auto;
-  -ms-grid-rows: auto auto auto;
-      grid-template-rows: auto auto auto;
+  min-height: calc(20vw + 300px);
 }
 
 .databaseWrapper {
   text-align: center;
   width: 33vw;
-  -webkit-transition: transform 2s ease-in-out;
-  -webkit-transition: -webkit-transform 2s ease-in-out;
-  transition: -webkit-transform 2s ease-in-out;
-  transition: transform 2s ease-in-out;
-  transition: transform 2s ease-in-out, -webkit-transform 2s ease-in-out;
+  -webkit-transition: transform 1.5s ease-in-out;
+  -webkit-transition: -webkit-transform 1.5s ease-in-out;
+  transition: -webkit-transform 1.5s ease-in-out;
+  transition: transform 1.5s ease-in-out;
+  transition: transform 1.5s ease-in-out, -webkit-transform 1.5s ease-in-out;
   height: auto;
 }
 
 .databaseWrapper:hover {
-  background-color: black;
-  -webkit-transform: scale(2) translate(16.5vw, 20%);
-          transform: scale(2) translate(16.5vw, 20%);
+  -webkit-transform: scale(2) translate(16.5vw, 25%);
+          transform: scale(2) translate(16.5vw, 25%);
   left: 0;
   position: absolute;
   z-index: 20;
@@ -120,5 +69,122 @@
       grid-template-columns: auto auto auto;
   -ms-grid-rows: 50% 50%;
       grid-template-rows: 50% 50%;
+}
+
+.frontEndWrapper {
+  text-align: center;
+  left: 33vw;
+  width: 33vw;
+  -webkit-transition: transform 1.5s ease-in-out;
+  -webkit-transition: -webkit-transform 1.5s ease-in-out;
+  transition: -webkit-transform 1.5s ease-in-out;
+  transition: transform 1.5s ease-in-out;
+  transition: transform 1.5s ease-in-out, -webkit-transform 1.5s ease-in-out;
+}
+
+.frontEndWrapper:hover {
+  -webkit-transform: scale(2) translate(0%, 25%);
+          transform: scale(2) translate(0%, 25%);
+  position: absolute;
+  z-index: 20;
+}
+
+.frontEndWrapper:hover .cssImg {
+  -webkit-transform: translate(0%, -220%);
+          transform: translate(0%, -220%);
+}
+
+.frontEndWrapper:hover .cssGridImg {
+  -webkit-transform: translate(0%, -163%);
+          transform: translate(0%, -163%);
+}
+
+.frontEndWrapper:hover .htmlImg {
+  -webkit-transform: translate(230%, -150%);
+          transform: translate(230%, -150%);
+}
+
+.frontEndWrapper:hover .jsImg {
+  -webkit-transform: translate(0%, -150%);
+          transform: translate(0%, -150%);
+}
+
+.frontEndWrapper:hover .jQueryImg {
+  -webkit-transform: translate(-225%, -150%);
+          transform: translate(-225%, -150%);
+}
+
+.frontEndWrapper:hover .muImg {
+  -webkit-transform: translate(0%, -150%);
+          transform: translate(0%, -150%);
+}
+
+.frontEndWrapper:hover .reactImg {
+  -webkit-transform: translate(0%, -300%);
+          transform: translate(0%, -300%);
+}
+
+.frontEndWrapper:hover .sassImg {
+  -webkit-transform: translate(10%, -150%);
+          transform: translate(10%, -150%);
+}
+
+.frontEnd {
+  justify-items: center;
+  display: -ms-grid;
+  display: grid;
+  grid-gap: 1vw;
+  -ms-grid-columns: 18% 18% 18% 18% 18%;
+      grid-template-columns: 18% 18% 18% 18% 18%;
+  -ms-grid-rows: 20% 20% 20% 20% 20%;
+      grid-template-rows: 20% 20% 20% 20% 20%;
+}
+
+.backEndWrapper {
+  text-align: center;
+  width: 33vw;
+  left: 66vw;
+  -webkit-transition: transform 1.5s ease-in-out;
+  -webkit-transition: -webkit-transform 1.5s ease-in-out;
+  transition: -webkit-transform 1.5s ease-in-out;
+  transition: transform 1.5s ease-in-out;
+  transition: transform 1.5s ease-in-out, -webkit-transform 1.5s ease-in-out;
+}
+
+.backEndWrapper:hover {
+  -webkit-transform: scale(2) translate(-16.5vw, 25%);
+          transform: scale(2) translate(-16.5vw, 25%);
+  position: absolute;
+  z-index: 20;
+}
+
+.backEndWrapper:hover .apiImg {
+  -webkit-transform: translate(-100%, -100%);
+          transform: translate(-100%, -100%);
+}
+
+.backEndWrapper:hover .ajaxImg {
+  -webkit-transform: translate(-100%, 0%);
+          transform: translate(-100%, 0%);
+}
+
+.backEndWrapper:hover .nodeImg {
+  -webkit-transform: translate(100%, -200%);
+          transform: translate(100%, -200%);
+}
+
+.backEndWrapper:hover .jsonImg {
+  -webkit-transform: translate(100%, -100%);
+          transform: translate(100%, -100%);
+}
+
+.backEnd {
+  justify-items: center;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto auto auto;
+      grid-template-columns: auto auto auto;
+  -ms-grid-rows: 33% 33% 33%;
+      grid-template-rows: 33% 33% 33%;
 }
 /*# sourceMappingURL=skills.css.map */

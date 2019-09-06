@@ -84,8 +84,10 @@ class Skills extends React.Component {
 
 
     return (
-      <div className="skillsWrapper">
+      <div className="skillsBackground">
+      <div className="backgroundOverlay">
 
+        <div className="skillsWrapper">
         <div style={{...Style2, ...Style3}} onMouseEnter={this.toggleHover1} onMouseLeave={this.toggleHover1} className="databaseWrapper">
           <h1>Database</h1>
           <div class="database">
@@ -118,26 +120,26 @@ class Skills extends React.Component {
             <grid-item></grid-item>
 
             <grid-item></grid-item>
-            <img src={css} className="skillsImg" alt="css"></img>
+            <img src={css} className="skillsImg cssImg" alt="css"></img>
             <grid-item></grid-item>
-            <img src={cssgrid} className="skillsImg" alt="cssgrid"></img>
-            <grid-item></grid-item>
-
-            <img src={html} className="skillsImg" alt="html"></img>
-            <grid-item></grid-item>
-            <img src={javascript} className="skillsImg" alt="javascript"></img>
-            <grid-item></grid-item>
-            <img src={jquery} className="skillsImg" alt="jquery"></img>
-
-            <grid-item></grid-item>
-            <img src={materialui} className="skillsImg" alt="materialui"></img>
-            <grid-item></grid-item>
-            <img src={sass} className="skillsImg" alt="sass"></img>
+            <img src={cssgrid} className="skillsImg cssGridImg" alt="cssgrid"></img>
             <grid-item></grid-item>
 
+            <img src={html} className="skillsImg htmlImg" alt="html"></img>
+            <grid-item></grid-item>
+            <img src={javascript} className="skillsImg jsImg" alt="javascript"></img>
+            <grid-item></grid-item>
+            <img src={jquery} className="skillsImg jQueryImg" alt="jquery"></img>
+
+            <grid-item></grid-item>
+            <img src={materialui} className="skillsImg muImg" alt="materialui"></img>
+            <grid-item></grid-item>
+            <img src={sass} className="skillsImg sassImg" alt="sass"></img>
+            <grid-item></grid-item>
+
             <grid-item></grid-item>
             <grid-item></grid-item>
-            <img src={react} className="skillsImg" alt="react"></img>
+            <img src={react} className="skillsImg reactImg" alt="react"></img>
           </div>
         </div>
 
@@ -146,19 +148,21 @@ class Skills extends React.Component {
           <h1>Back-End</h1>
           <div className="backEnd">
           <grid-item></grid-item>
-            <img src={ajax} className="skillsImg imgResize" alt="ajax"></img>
+            <img src={ajax} className="skillsImg ajaxImg" alt="ajax"></img>
             <grid-item></grid-item>
 
-            <img src={api} className="skillsImg imgResize" alt="api"></img>
+            <img src={api} className="skillsImg apiImg" alt="api"></img>
             <grid-item></grid-item>
-            <img src={json} className="skillsImg imgResize" alt="json"></img>
+            <img src={json} className="skillsImg jsonImg" alt="json"></img>
 
             <grid-item></grid-item>
-            <img src={node} className="skillsImg imgResize" alt="node"></img>
+            <img src={node} className="skillsImg nodeImg" alt="node"></img>
             <grid-item></grid-item>
           </div>
         </div>
 
+        </div>
+        </div>
       </div>
     );
   }
