@@ -43,10 +43,10 @@ class Projects extends React.Component {
                         <img src={react} className="techImg" alt="material ui"></img>
                         <img src={mongodb} className="techImg" alt="material ui"></img>
 
-                        <span>Top
                         <img className="projectImg" src={Plantify} alt="Plantify App">
-
                         </img>
+
+                        <span>Top
 
                         </span>
                     </div>

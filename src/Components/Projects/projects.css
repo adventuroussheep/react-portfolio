@@ -1,11 +1,11 @@
 .Wrapper {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 10% auto auto 10%;
-      grid-template-columns: 10% auto auto 10%;
-  -ms-grid-rows: auto auto auto auto;
-      grid-template-rows: auto auto auto auto;
-  grid-gap: 3em;
+  -ms-grid-columns: 10vw 36vw 35vw 10vw;
+      grid-template-columns: 10vw 36vw 35vw 10vw;
+  -ms-grid-rows: auto 15vw 15vw auto;
+      grid-template-rows: auto 15vw 15vw auto;
+  grid-gap: 2vw;
   background: url("../../Assests/Images/orOpt.jpg");
   background-size: cover;
 }
@@ -30,16 +30,20 @@
 }
 
 .Wrapper .projectImg {
+  position: relative;
   z-index: 1 !important;
   height: 15vw;
+  width: 32vw;
   visibility: visible;
 }
 
 .Wrapper span {
   position: absolute;
   color: white;
+  height: 15vw;
+  width: calc(32vw + 1px);
   left: 0;
-  z-index: 5;
+  z-index: 4;
   visibility: hidden;
   display: inline-block;
   vertical-align: middle;
