@@ -38,36 +38,44 @@ class Projects extends React.Component {
 
 
                 <div className="plantifyOverlay">
-                        <img src={Plantify} alt="Plantify App">
-
-                        </img>
-                        <span>Top</span>
+                    <div className="projectContainer">
                         <img src={materialui} className="techImg" alt="material ui"></img>
                         <img src={react} className="techImg" alt="material ui"></img>
+                        <img src={mongodb} className="techImg" alt="material ui"></img>
+
+                        <span>Top
+                        <img className="projectImg" src={Plantify} alt="Plantify App">
+
+                        </img>
+
+                        </span>
+                    </div>
+                        
                 </div>
                 <div className="plantifyOverlay">
-                    <img src={Jamsesh} alt="Jamsesh App"></img>
+                    <img className="projectImg" src={Jamsesh} alt="Jamsesh App"></img>
                     <span>Top</span>
                     <img src={react} className="techImg" alt="material ui"></img>
                 </div>
                 <div></div>
                 <div></div>
                 <div className="plantifyOverlay">
-                    <img src={RPG} alt="RPG App"></img>
+                    <img className="projectImg" src={RPG} alt="RPG App"></img>
                     <span>Top</span>
+                    <img src={react} className="techImg" alt="material ui"></img>
                 </div>
                 <div className="plantifyOverlay">
-                    <img src={Train} alt="Train App"></img>
+                    <img className="projectImg" src={Train} alt="Train App"></img>
                     <span>Top</span>
                 </div>
                 <div></div>
                 <div></div>
                 <div className="plantifyOverlay">
-                    <img src={Memory} alt="Memory App"></img>
+                    <img className="projectImg" src={Memory} alt="Memory App"></img>
                     <span>Top</span>
                 </div>
                 <div className="plantifyOverlay">
-                    <img src={Plantify} alt="Plantify App"></img>
+                    <img className="projectImg" src={Plantify} alt="Plantify App"></img>
                     <span>Top</span>
                 </div>
             </div>

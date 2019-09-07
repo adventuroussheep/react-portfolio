@@ -11,7 +11,7 @@
 		position: absolute;
         z-index: -1;
         // height: calc(100% - 20px); 
-		top: 20px;
+		top: 0;
 		left: 0;
 		right: 0;
 		bottom: 0;
@@ -46,8 +46,11 @@
 
 
     .plantifyOverlay{
+        margin-top: 20px;
         position: relative;
-        z-index: 10;
+        z-index: 1;
+        // overflow: hidden;
+        display: flex;
     } 
 
     .plantifyOverlay:hover span{
@@ -63,47 +66,48 @@
     
     
     
-    // div:hover span{
-    //     // display: initial;
-    //     // top: -150px;
-    // }
-    
-    img {
-        position: relative;
-        margin-top: 20px;
-        width: 100%;
-        z-index: 2;
+  
+    .projectImg{
+        z-index: 1!important;
+        height: 15vw;
+        visibility: visible;
     }
-    
-    span {
-        position: absolute;
+
+    // img {
+    //     // position: relative;
+    //     // margin-top: 20px;
+    //     width: 100%;
+    //     // min-width: 100%;
+    //     // min-height: 100%;
+    //     z-index: 2;
+    // }
+        
+        span {
+            position: absolute;
+            color: white;
+            // padding: 50px;
+            // height: 15vw;
+            // width: 100.1%;
+            // padding: 30px;
+            // background: rgba(rgb(0, 0, 0), .3);
+            left: 0;
+            // top: 5vw;
+            z-index: 5;
+            visibility: hidden;
+            // transition: all 2s ease-in;
+            @include bounce-to-bottom();
+    }
+    .techImg{
+        position: relative;
         color: white;
-        padding: 50px;
-        height: 100%;
-        width: 100.1%;
-        // padding: 30px;
-        // background: rgba(rgb(0, 0, 0), .3);
+        width: 5vw;
         left: 0;
-        top: 0;
-        z-index: 3;
+        top: 5vw;
+        pointer-events: none;
+        z-index: 5;
         visibility: hidden;
         // transition: all 2s ease-in;
         @include bounce-to-bottom();
-    }
-    .techImg{
-        position: absolute;
-        color: white;
-        // height: calc(100% - 20px);
-        // height: 100%;
-        width: 5vw;
-        // width: 100%;
-        // padding: 30px;
-        // background: rgba(rgb(0, 0, 0), .3);
-        left: 0;
-        // top: -60%;
-        z-index: 3;
-        visibility: hidden;
-        // transition: all 2s ease-in;
 
     }
 }
