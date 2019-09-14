@@ -8,15 +8,24 @@
   grid-gap: 2vw;
   background: url("../../Assests/Images/orOpt.jpg");
   background-size: cover;
+  padding-bottom: 50px;
 }
 
 .Wrapper .plantifyOverlay {
   margin-top: 20px;
+  margin-bottom: 4vw;
   position: relative;
   z-index: 1;
+  height: 10vw;
+  width: 32vw;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+
+.Wrapper .plantifyOverlay .projectContainer {
+  height: 10vw;
+  width: 32vw;
 }
 
 .Wrapper .plantifyOverlay:hover span {
@@ -27,6 +36,9 @@
 .Wrapper .plantifyOverlay:hover .techImg {
   visibility: initial;
   display: initial;
+  opacity: 1;
+  -webkit-transition-duration: 0.6s;
+          transition-duration: 0.6s;
 }
 
 .Wrapper .projectImg {
@@ -35,14 +47,23 @@
   height: 15vw;
   width: 32vw;
   visibility: visible;
+  top: -5vw;
+}
+
+.Wrapper .projectInfo {
+  margin-top: 5vw;
+  font-family: 'Lexend Deca', sans-serif;
+  font-size: calc(0.4rem + .5vw);
+  text-align: center;
 }
 
 .Wrapper span {
   position: absolute;
   color: white;
-  height: 15vw;
+  height: calc(15vw + 1px);
   width: calc(32vw + 1px);
   left: 0;
+  top: 0;
   z-index: 4;
   visibility: hidden;
   display: inline-block;
@@ -97,54 +118,9 @@
   color: white;
   width: 5vw;
   left: 0;
-  top: 5vw;
   pointer-events: none;
   z-index: 5;
   visibility: hidden;
-  display: inline-block;
-  vertical-align: middle;
-  -webkit-transform: perspective(1px) translateZ(0);
-  transform: perspective(1px) translateZ(0);
-  -webkit-box-shadow: 0 0 1px rgba(0, 0, 0, 0);
-          box-shadow: 0 0 1px rgba(0, 0, 0, 0);
-  -webkit-transition-property: color;
-  transition-property: color;
-  -webkit-transition-duration: 0.5s;
-  transition-duration: 0.5s;
-}
-
-.Wrapper .techImg:before {
-  content: "";
-  position: absolute;
-  z-index: -1;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: rgba(0, 0, 0, 0.7);
-  -webkit-transform: scaleY(0);
-  transform: scaleY(0);
-  -webkit-transform-origin: 50% 0;
-  transform-origin: 50% 0;
-  -webkit-transition-property: transform;
-  -webkit-transition-property: -webkit-transform;
-  transition-property: -webkit-transform;
-  transition-property: transform;
-  transition-property: transform, -webkit-transform;
-  -webkit-transition-duration: 0.5s;
-  transition-duration: 0.5s;
-  -webkit-transition-timing-function: ease-out;
-  transition-timing-function: ease-out;
-}
-
-.Wrapper .techImg:hover, .Wrapper .techImg:focus, .Wrapper .techImg:active {
-  color: white;
-}
-
-.Wrapper .techImg:hover:before, .Wrapper .techImg:focus:before, .Wrapper .techImg:active:before {
-  -webkit-transform: scaleY(1);
-  transform: scaleY(1);
-  -webkit-transition-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66);
-  transition-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66);
+  opacity: 0;
 }
 /*# sourceMappingURL=projects.css.map */

@@ -6,6 +6,7 @@ import Jamsesh from "../../Assests/Images/jamsesh.JPG";
 import RPG from "../../Assests/Images/rpg.JPG";
 import Train from "../../Assests/Images/train.JPG";
 import Memory from "../../Assests/Images/memoryGame.JPG";
+import Construction from "../../Assests/Images/comingSoon.jpg"
 
 
 // Front-end images
@@ -37,46 +38,91 @@ class Projects extends React.Component {
                 <div></div>
 
 
+{/* Plantify */}
                 <div className="plantifyOverlay">
                     <div className="projectContainer">
                         <img src={materialui} className="techImg" alt="material ui"></img>
-                        <img src={react} className="techImg" alt="material ui"></img>
-                        <img src={mongodb} className="techImg" alt="material ui"></img>
+                        <img src={react} className="techImg" alt="react"></img>
+                        <img src={css} className="techImg" alt="css"></img>
+                        <img src={api} className="techImg" alt="api"></img>
+                        <img src={node} className="techImg" alt="node"></img>
+                        <img src={mongodb} className="techImg" alt="mongodb"></img>
 
                         <img className="projectImg" src={Plantify} alt="Plantify App">
                         </img>
 
-                        <span>Top
-
+                        <span>
+                        <p className="projectInfo"><bold>PLANTIFY</bold><br/>Identify plants using your phones camera, add plants to your garden, and mange your plants feeding and watering schedule.</p>
                         </span>
                     </div>
-                        
                 </div>
+
+
+{/* Jam Sesh */}
                 <div className="plantifyOverlay">
+                    <div className="projectContainer">
+                    <img src={javascript} className="techImg" alt="javascript"></img>
+                    <img src={jquery} className="techImg" alt="jQuery"></img>
+                    <img src={json} className="techImg" alt="json"></img>
+                    <img src={api} className="techImg" alt="api"></img>
+                    <img src={node} className="techImg" alt="node"></img>
+                    
+
+                    <span><p className="projectInfo"><bold>JAM SESH</bold><br/>Find musicians to join your band or fill a position for a last minute gig. Use the map to easily find musicians in your area and their favorite instrument.</p></span>
                     <img className="projectImg" src={Jamsesh} alt="Jamsesh App"></img>
-                    <span>Top</span>
-                    <img src={react} className="techImg" alt="material ui"></img>
+                    </div>
                 </div>
+
+
                 <div></div>
                 <div></div>
+
+{/* RPG */}
                 <div className="plantifyOverlay">
+                <div className="projectContainer">
+                <span><p className="projectInfo"><bold>RPG</bold><br/>Can you survive this gauntlet? Choose a hero and battle the reamining characters.</p></span>
+                    <img src={javascript} className="techImg" alt="javascript"></img>
+                    <img src={jquery} className="techImg" alt="jquery"></img>
+                    <img src={css} className="techImg" alt="css"></img>
+                    <img src={cssgrid} className="techImg" alt="cssgrid"></img>
                     <img className="projectImg" src={RPG} alt="RPG App"></img>
-                    <span>Top</span>
-                    <img src={react} className="techImg" alt="material ui"></img>
+                    </div>
                 </div>
+
+{/* Train Scheduler */}
                 <div className="plantifyOverlay">
+                <div className="projectContainer">
+                <span><p className="projectInfo"><bold>Train Schedule</bold><br/>Never miss a train again! Add custom trains, and automatically calculate their arrival times. This app uses Moment.js.</p></span>
+
+                    <img src={api} className="techImg" alt="api"></img>
+                    <img src={ajax} className="techImg" alt="ajax"></img>
+                    <img src={json} className="techImg" alt="json"></img>
+                    <img src={firebase} className="techImg" alt="firebase"></img>
+                    <img src={bootstrap} className="techImg" alt="bootstrap"></img>
                     <img className="projectImg" src={Train} alt="Train App"></img>
-                    <span>Top</span>
+                    </div>
                 </div>
+
+
                 <div></div>
                 <div></div>
+
+{/* Memory Game */}
                 <div className="plantifyOverlay">
+                <div className="projectContainer">
+                <span><p className="projectInfo"><bold>MEMORY GAME</bold><br/>How good is your memory? Select all the images you have not already selected to try and beat this game.</p></span>
+                    <img src={react} className="techImg" alt="material ui"></img>
                     <img className="projectImg" src={Memory} alt="Memory App"></img>
-                    <span>Top</span>
+                    </div>
                 </div>
+
+
                 <div className="plantifyOverlay">
-                    <img className="projectImg" src={Plantify} alt="Plantify App"></img>
-                    <span>Top</span>
+                <div className="projectContainer">
+                <span><p className="projectInfo"><bold>INTRO TO GEOLOGY</bold><br/>This website is a work in progress and something I use to experiment different code with. Please know that this is by no means a complete project.</p></span>
+                    <img src={react} className="techImg" alt="material ui"></img>
+                    <img className="projectImg" src={Construction} alt="coming soon"></img>
+                    </div>
                 </div>
             </div>
         )

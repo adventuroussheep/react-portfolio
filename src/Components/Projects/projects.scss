@@ -43,14 +43,24 @@
     grid-gap: 2vw;  
     background: url("../../Assests/Images/orOpt.jpg");
     background-size: cover;
+    padding-bottom: 50px;
 
 
     .plantifyOverlay{
         margin-top: 20px;
+        margin-bottom: 4vw;
         position: relative;
         z-index: 1;
         // overflow: hidden;
+        height: 10vw;
+        width: 32vw;
         display: flex;
+
+        .projectContainer{
+            height: 10vw;
+            width: 32vw;
+        }
+        
     } 
 
     .plantifyOverlay:hover span{
@@ -61,6 +71,8 @@
     .plantifyOverlay:hover .techImg{
         visibility: initial;
         display: initial;    
+        opacity: 1;
+        transition-duration: 0.6s;
     }
     
     
@@ -73,7 +85,14 @@
         height: 15vw;
         width: 32vw;
         visibility: visible;
-        // top: -20px;
+        top: -5vw;
+    }
+
+    .projectInfo{
+        margin-top: 5vw;
+        font-family: 'Lexend Deca', sans-serif;
+        font-size: calc(0.4rem + .5vw);
+        text-align: center;
     }
 
     // img {
@@ -90,11 +109,12 @@
             color: white;
             // padding: 50px;
             // margin-top: 20px;
-            height: 15vw;
+            height: calc(15vw + 1px);
             width: calc(32vw + 1px);
             // padding: 30px;
             // background: rgba(rgb(0, 0, 0), .3);
             left: 0;
+            top: 0;
             // top: 5vw;
             z-index: 4;
             visibility: hidden;
@@ -104,14 +124,13 @@
     .techImg{
         position: relative;
         color: white;
+        // margin-left:
         width: 5vw;
         left: 0;
-        top: 5vw;
         pointer-events: none;
         z-index: 5;
         visibility: hidden;
-        // transition: all 2s ease-in;
-        @include bounce-to-bottom();
+        opacity: 0;
 
     }
 }
