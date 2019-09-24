@@ -1,4 +1,5 @@
 import React from "react";
+import Parallax from 'parallax-js';
 
 import "./skills.css";
 
@@ -27,8 +28,12 @@ import firebase from "../../Assests/Images/Skills/firebase.png";
 
 class Skills extends React.Component {
 
-  
 
+  // Parralax
+
+
+
+  // Skills hover
   constructor(props){
     super(props)
     this.state = {
@@ -55,8 +60,6 @@ class Skills extends React.Component {
   }
 
 
-
-
   render() {
 
     var Style1;
@@ -81,6 +84,7 @@ class Skills extends React.Component {
     // } else {
     //   Style3 = {display: 'inline-grid'}
     }
+
 
 
     return (

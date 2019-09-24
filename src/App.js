@@ -12,10 +12,10 @@ function App() {
         <Navbar/>
       </header>
       <AboutPage/>
-        <h1 name="skillsScroll">Skills</h1>
+        <h1 className="brText" name="skillsScroll">Skills</h1>
       <Skills/>
       <div>
-        <h1 name="projectsScroll">Projects</h1>
+        <h1 className="brText" name="projectsScroll">Projects</h1>
       </div>
       <Projects/>
     </div>

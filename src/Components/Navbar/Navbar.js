@@ -3,6 +3,8 @@ import './navbar.css';
 import * as Scroll from 'react-scroll';
 import { Link, Element , Events, animateScroll as scroll, scrollSpy, scroller } from 'react-scroll';
  
+import pdf from "../../Assests/Jacob_Haas_Resume.pdf";
+
 class Navbar extends React.Component {
 
   render() {
@@ -21,15 +23,11 @@ class Navbar extends React.Component {
           </Link>
 
           <Link to="projectsScroll" spy={true} smooth={true} offset={-60} duration={500} onSetActive={this.handleSetActive}>
-        <button className="buttonClass">Projects</button>
+        <button className="buttonClass">Projects</button>&nbsp;&nbsp;&nbsp;
           </Link>
 
+          <a href={pdf} download="Jacob_Haas_Resume" target="_blank" className="buttonClass">Resume</a>
 
-          <a href="../../Assests/Jacob_Haas_Resume.pdf" download="Jacob_Haas_Resume.pdf" target="_blank" className="buttonClass">Resume</a>
-
-        <Link>
-        <a href="../../Assests/Jacob_Haas_Resume.pdf" download="Jacob Haas Resume" target="_blank" className="buttonClass">Resume</a>
-        </Link>
         </div>
         {/* <button type="button" className="btn btn-info">Info</button> */}
 {/* <button type="button" className="btn btn-light">Light</button> */}
