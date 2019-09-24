@@ -63,4 +63,9 @@
   -webkit-transform: scaleX(1);
   transform: scaleX(1);
 }
+
+.navName {
+  color: white;
+  cursor: pointer;
+}
 /*# sourceMappingURL=navbar.css.map */

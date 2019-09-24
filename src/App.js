@@ -8,14 +8,14 @@ import Skills from './Components/Skills/Skills';
 function App() {
   return (
     <div className="">
-      <header className="">
+      <header name="aboutScroll">
         <Navbar/>
       </header>
       <AboutPage/>
-        <h1>Skills</h1>
+        <h1 name="skillsScroll">Skills</h1>
       <Skills/>
       <div>
-        <h1>Projects</h1>
+        <h1 name="projectsScroll">Projects</h1>
       </div>
       <Projects/>
     </div>
