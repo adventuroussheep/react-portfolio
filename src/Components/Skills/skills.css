@@ -1,10 +1,26 @@
 .skillsBackground {
   background: url("../../Assests/Images/borah.jpg");
   background-size: cover;
+  width: 120vw;
+  background-position: center;
+  min-height: calc(20vw + 300px);
+  margin-left: -10vw;
+  position: absolute;
+  -webkit-filter: brightness(50%);
+          filter: brightness(50%);
+}
+
+#scene {
+  width: 100%;
+  z-index: -1;
+  overflow: hidden;
 }
 
 .backgroundOverlay {
-  background-color: rgba(0, 0, 0, 0.5);
+  position: relative;
+  min-height: calc(20vw + 300px);
+  top: calc(-20vw + -300px);
+  margin-bottom: calc(-20vw + -300px);
 }
 
 .skillsImg {

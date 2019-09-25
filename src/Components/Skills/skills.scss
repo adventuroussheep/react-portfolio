@@ -1,10 +1,31 @@
 .skillsBackground{
     background: url("../../Assests/Images/borah.jpg");
     background-size: cover;
+    width: 120vw;
+    background-position: center;
+    min-height: calc(20vw + 300px);
+    // height:50vw;
+    margin-left: -10vw;
+    // opacity: 0.8;
+    position: absolute;
+    // margin-top: 500px;
+    filter: brightness(50%);
+}
+
+#scene{
+    width: 100%;
+    z-index: -1;
+    overflow: hidden;
 }
 
 .backgroundOverlay{
-    background-color: rgba(000, 000, 000, 0.5);
+    // background-color: rgba(000, 000, 000, 0.5);
+    position: relative;
+    // min-height: 500px;
+    min-height: calc(20vw + 300px);
+    // height: 50vw;
+    top: calc(-20vw + -300px);
+    margin-bottom: calc(-20vw + -300px);
 }
 
 // Transition times for all skill images

@@ -1,6 +1,7 @@
 import React from "react";
 import Parallax from 'parallax-js';
 
+
 import "./skills.css";
 
 // Front-end images
@@ -27,11 +28,6 @@ import firebase from "../../Assests/Images/Skills/firebase.png";
 
 
 class Skills extends React.Component {
-
-
-  // Parralax
-
-
 
   // Skills hover
   constructor(props){
@@ -86,10 +82,40 @@ class Skills extends React.Component {
     }
 
 
+    const script = document.createElement("script");
+
+    script.src = "https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js";
+    script.async = true;
+
+    document.body.appendChild(script);
+
+    var scene = document.getElementById('scene');
+    var parallaxInstance = new Parallax(scene);
+
 
     return (
-      <div className="skillsBackground">
+      <div>
+
+        {/* Parallax Effect */}
+        <ul id="scene">
+      <div className="skillsBackground layer" data-depth="0.1">
+        </div>
+        </ul>
       <div className="backgroundOverlay">
+      
+      {/* <div>
+
+        <div className="container">
+
+      <ul id="scene">
+      <div className="layer" data-depth="0.4" id="bg" >
+        </div>
+      <li className="layer" data-depth="0.2"><img className="" src={node} alt="node"/></li>
+        <li className="layer" data-depth="0.8"><img className="" src={node} alt="node"/></li>
+        <li className="layer" data-depth="0.2"><img className="" src={node} alt="node"/></li>
+      </ul>
+      </div>
+      </div> */}
 
         <div className="skillsWrapper">
         <div style={{...Style2, ...Style3}} onMouseEnter={this.toggleHover1} onMouseLeave={this.toggleHover1} className="databaseWrapper">
@@ -167,7 +193,9 @@ class Skills extends React.Component {
 
         </div>
         </div>
-      </div>
+    </div>
+    // </ul>
+    // </div>
     );
   }
 }
