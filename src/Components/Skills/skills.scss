@@ -14,8 +14,12 @@
 
 #scene{
     width: 100%;
-    z-index: -1;
+    // z-index: -1;
     overflow: hidden;
+}
+
+.sceneClass{
+    height: calc(20vw + 300px);
 }
 
 .backgroundOverlay{

@@ -97,7 +97,7 @@ class Skills extends React.Component {
       <div>
 
         {/* Parallax Effect */}
-        <ul id="scene">
+        <ul id="scene" className="sceneClass">
       <div className="skillsBackground layer" data-depth="0.1">
         </div>
         </ul>

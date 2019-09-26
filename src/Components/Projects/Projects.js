@@ -111,16 +111,19 @@ class Projects extends React.Component {
                 <div className="plantifyOverlay">
                 <div className="projectContainer">
                 <span><p className="projectInfo"><bold>MEMORY GAME</bold><br/>How good is your memory? Select all the images you have not already selected to try and beat this game.</p></span>
-                    <img src={react} className="techImg" alt="material ui"></img>
+                    <img src={react} className="techImg" alt="react"></img>
+                    <img src={bootstrap} className="techImg" alt="bootstrap"></img>
+                    <img src={css} className="techImg" alt="css"></img>
                     <img className="projectImg" src={Memory} alt="Memory App"></img>
                     </div>
                 </div>
 
 
+{/* Work in Progress */}
                 <div className="plantifyOverlay">
                 <div className="projectContainer">
-                <span><p className="projectInfo"><bold>INTRO TO GEOLOGY</bold><br/>This website is a work in progress and something I use to experiment different code with. Please know that this is by no means a complete project.</p></span>
-                    <img src={react} className="techImg" alt="material ui"></img>
+                <img src={react} className="techImg" alt="react"></img>
+                <span><p className="projectInfo"><bold>WORK IN PROGRESS</bold><br/>My latest projects code will be here. Please know that this not a complete project but your more than welcome to see whats going on.</p></span>
                     <img className="projectImg" src={Construction} alt="coming soon"></img>
                     </div>
                 </div>

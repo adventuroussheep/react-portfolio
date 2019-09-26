@@ -8,6 +8,7 @@
   grid-gap: 2vw;
   background: url("../../Assests/Images/orOpt.jpg");
   background-size: cover;
+  background-position: center;
   padding-bottom: 50px;
 }
 

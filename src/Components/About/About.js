@@ -1,6 +1,7 @@
 import React from "react";
 import "./about.css";
 
+
 import profilePic from "../../Assests/Images/profile-pic-resize.jpg";
 
 import phone from "../../Assests/Images/Icons/phone.png";
@@ -10,6 +11,20 @@ import github from "../../Assests/Images/Icons/github.png";
 
 
 class AboutPage extends React.Component {
+
+  phoneFunc(){
+    // document.location.href = "tel:7153162544";
+    window.open("tel:7153162544");
+  }
+
+  linkedInFunc(){
+    window.open("https://www.linkedin.com/in/jacob-haas-909b05172");
+  }
+
+  gitHubFunc(){
+    window.open("https://github.com/adventuroussheep");
+  }
+
   render() {
     return (
       <div id="aboutWrapper">
@@ -19,52 +34,59 @@ class AboutPage extends React.Component {
           </div>
           <div id="contactBody">
             <div id="contactBodyInner">
-              {/* <h4>Jacob Haas</h4> */}
-              {/* <a href="./assests/docs/Resume_8-19.pdf" download="Jacobs Resume">Resume (PDF)</a> */}
-              {/* <br><br> */}
+ 
 
               <div id="contactPhone">
-                {/* <br> */}
+              {/* <a href="callto:1-715-316-2544"> */}
+              <a href="tel:1-715-316-2544">
                 <img
                   className="linkHover"
                   src={phone}
-                  onClick="window.open('tel:7153162544');"
                   alt="phone"
                 />
+                </a>
                 {/* <p>715-316-2544</p> */}
               </div>
 
-              <div id="contactEmail" className="hvr-float-shadow">
+              <div id="contactEmail" className="hvr-float-shadow" >
                 {/* <br> */}
+                <a href={"mailto:" + "jacob_haas@live.com"}>
                 <img
                   className="linkHover"
                   id="emailImg"
                   src={email}
                   alt="email"
-                  href="mailto:jacob_haas@live.com" target="_top"
+                  onClick={this.emailFunc}
+                  // href="mailto:jacob_haas@live.com" target="_top"
                 />
                 {/* <p style="user-select:all">jacob@jhaas.dev</p> */}
+                </a>
               </div>
 
+
+{/* LinkedIn */}
               <div id="contactLinkedin">
                 {/* <br> */}
+                <a onClick={this.linkedInFunc}>
                 <img
                   className="linkHover"
                   id="linkedinUrl"
                   src={linkedin}
                   alt="linkedin"
-                />
-                {/* <p style="user-select:all">https://www.linkedin.com/in/jacob-haas-909b05172/</p> */}
+                  />
+                  </a>
               </div>
 
+{/* GitHub */}
               <div id="contactGithub">
-                {/* <br> */}
+              <a onClick={this.gitHubFunc}>
                 <img
                   className="linkHover"
                   id="githubUrl"
                   src={github}
                   alt="github"
                 />
+                </a>
                 {/* <p style="user-select:all">https://github.com/adventuroussheep</p> */}
               </div>
             </div>
