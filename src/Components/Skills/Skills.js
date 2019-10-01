@@ -142,7 +142,10 @@ class Skills extends React.Component {
 
         <h1 className="mobileHeader">Back-End</h1>
         <div className="mobileBackEnd">
+          <div>
             <img src={ajax} className="skillsImg ajaxImg" alt="ajax"></img>
+            <p>Ajax</p>
+          </div>
             <img src={api} className="skillsImg apiImg" alt="api"></img>
             <img src={json} className="skillsImg jsonImg" alt="json"></img>
             <grid-item></grid-item>
@@ -247,8 +250,6 @@ class Skills extends React.Component {
         </div>
         </div>
     </div>
-    // </ul>
-    // </div>
     );
   }
 }

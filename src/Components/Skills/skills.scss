@@ -184,7 +184,7 @@
 .mobileHeader{
     z-index: 3;
     position: relative;
-    padding-top: 20px;
+    padding-top: 50px;
     color: rgb(230, 230, 230);
 }
 
@@ -217,9 +217,7 @@
     grid-template-columns: 33% 33% 33%;
     justify-items: center;
     z-index: 5;
-    // position: relative;
     position: relative;
-    filter: brightness(150%);
 }
 
 
@@ -238,12 +236,11 @@
         width: 100vw;
         // filter: brightness(50%);
         // z-index: 1;
-        // display: none;
     }
     .mobileBackground::before{
         content: "";
         position: absolute;
-        // background: url("../../Assests/Images/borah.jpg");
+        background: url("../../Assests/Images/borah.jpg");
         background-size: cover;
         filter: brightness(50%);
         top: 0; 
@@ -258,8 +255,7 @@
         margin-left: 11%;
     }
     .skillsBackground{
-        // display: none;
-        height: 100%;
+        display: none;
     }
     .databaseWrapper, .frontEndWrapper, .backEndWrapper{
         display: none;
