@@ -206,4 +206,107 @@
   -ms-grid-rows: 33% 33% 33%;
       grid-template-rows: 33% 33% 33%;
 }
+
+.mobileWrapper {
+  display: none;
+  text-align: center;
+  width: 100vw;
+}
+
+.mobileHeader {
+  z-index: 3;
+  position: relative;
+  padding-top: 20px;
+  color: #e6e6e6;
+}
+
+.mobileFrontEnd {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: auto;
+      grid-template-rows: auto;
+  -ms-grid-columns: 33% 33% 33%;
+      grid-template-columns: 33% 33% 33%;
+  justify-items: center;
+  z-index: 5;
+  position: relative;
+}
+
+.mobileBackEnd {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100vw;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: auto;
+      grid-template-rows: auto;
+  -ms-grid-columns: 33% 33% 33%;
+      grid-template-columns: 33% 33% 33%;
+  justify-items: center;
+  z-index: 5;
+  position: relative;
+}
+
+.mobileDB {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100vw;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: auto;
+      grid-template-rows: auto;
+  -ms-grid-columns: 33% 33% 33%;
+      grid-template-columns: 33% 33% 33%;
+  justify-items: center;
+  z-index: 5;
+  position: relative;
+  -webkit-filter: brightness(150%);
+          filter: brightness(150%);
+}
+
+@media screen and (max-width: 700px) {
+  .skillsWrapper {
+    -ms-grid-rows: auto;
+        grid-template-rows: auto;
+    -ms-grid-columns: 33% 33% 33%;
+        grid-template-columns: 33% 33% 33%;
+  }
+  .mobileBackground {
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    width: 100vw;
+  }
+  .mobileBackground::before {
+    content: "";
+    position: absolute;
+    background-size: cover;
+    -webkit-filter: brightness(50%);
+            filter: brightness(50%);
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+  .skillsImg {
+    margin-top: 20px;
+  }
+  .firebaseImg {
+    margin-left: 11%;
+  }
+  .skillsBackground {
+    height: 100%;
+  }
+  .databaseWrapper, .frontEndWrapper, .backEndWrapper {
+    display: none;
+  }
+  .mobileWrapper {
+    display: inline;
+  }
+}
 /*# sourceMappingURL=skills.css.map */

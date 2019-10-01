@@ -93,27 +93,11 @@ class AboutPage extends React.Component {
           </div>
           <div className="aboutText">
             <p>
-              My name is Jacob, I am a full stack web developer and specialize
-              in front-end web development. I enjoy working with CSS to create
-              well-organized and immersive websites. Growing up in rural
-              Wisconsin I spent much of my time online or exploring the woods.
-              By the time I was a Freshman in High School I created my school's
-              website and at the end of the year was presented with a
-              "WebMaster" award. I went on to create small websites for family
-              members and continued learning about website design and networking
-              when I moved to Colorado the following year. This move allowed me
-              to follow my passion for exploration which eventually led me to
-              get a Geology degree at the University of Wisconsin.
+            My name is Jacob, I am a full stack web developer with a MERN stack certification from UC-Berkeley’s coding bootcamp and specialize in front-end web development. I enjoy working with front-end libraries like CSS, SASS, and JavaScript to create well-organized and immersive websites. Growing up in rural Wisconsin I spent much of my time online or exploring the forests. By the time I was a Freshman in high school I created my school’s website and was presented with a “WebMaster” award for my work. I went on to create small websites for family members and continued learning about website design and networking when I moved to Colorado the following year. This move allowed me to follow my passion for exploration which eventually led me to get my Geology degree from the University of Wisconsin.
             </p>
             <br />
             <p>
-              Having spent countless hours over a microscope during Geology I am
-              very detail oriented. I enjoy applying that attention to detail
-              when creating websites. Having presented research findings to a
-              wide variety of audiences I am good at explaining complex ideas to
-              people unfamiliar with the subject. I hope to bring my attention
-              to detail, excellent customer service experience, and hard work
-              ethic to your company.
+            Having spent countless hours over a microscope I am very detail-oriented. I enjoy applying that attention to detail when creating websites. Having presented research findings to a wide variety of audiences I am good and taking complex ideas and explaining them to people unfamiliar with the subject. I hope to bring my attention to detail, out of the box thinking, and hard work ethic to your companies next project.
             </p>
           </div>
         </div>

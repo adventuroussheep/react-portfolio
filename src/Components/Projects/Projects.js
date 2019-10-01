@@ -33,6 +33,12 @@ import firebase from "../../Assests/Images/Skills/firebase.png";
 
 class Projects extends React.Component {
     render(){
+
+
+        // Styles
+        var invis = {visibility: 'hidden'};
+            
+
         return(
             <div className="Wrapper">
                 <div></div>
@@ -122,7 +128,7 @@ class Projects extends React.Component {
 {/* Work in Progress */}
                 <div className="plantifyOverlay">
                 <div className="projectContainer">
-                <img src={react} className="techImg" alt="react"></img>
+                <img src={react} style={invis} className="techImg" alt="react"></img>
                 <span><p className="projectInfo"><bold>WORK IN PROGRESS</bold><br/>My latest projects code will be here. Please know that this not a complete project but your more than welcome to see whats going on.</p></span>
                     <img className="projectImg" src={Construction} alt="coming soon"></img>
                     </div>

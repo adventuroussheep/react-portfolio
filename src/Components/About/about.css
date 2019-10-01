@@ -116,4 +116,11 @@
   padding-top: 25px;
   padding-bottom: 50px;
 }
+
+@media screen and (max-width: 700px) {
+  #profilePic {
+    width: 30vw;
+    height: 30vw;
+  }
+}
 /*# sourceMappingURL=about.css.map */

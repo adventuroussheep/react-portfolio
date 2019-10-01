@@ -118,16 +118,69 @@ class Skills extends React.Component {
       </div> */}
 
         <div className="skillsWrapper">
+
+
+{/* Mobile Divs */}
+      <div className="mobileWrapper">
+        <div className="mobileBackground">
+
+        <h1 className="mobileHeader">Front-End</h1>
+        <div className="mobileFrontEnd">
+        <img src={bootstrap} className="skillsImg" alt="bootstrap"></img>
+    
+            <img src={css} className="skillsImg cssImg" alt="css"></img>
+            <img src={cssgrid} className="skillsImg cssGridImg" alt="cssgrid"></img>
+            <img src={html} className="skillsImg htmlImg" alt="html"></img>
+            <img src={javascript} className="skillsImg jsImg" alt="javascript"></img>
+            <img src={jquery} className="skillsImg jQueryImg" alt="jquery"></img>
+            <img src={materialui} className="skillsImg muImg" alt="materialui"></img>
+            <img src={sass} className="skillsImg sassImg" alt="sass"></img>
+            <img src={react} className="skillsImg reactImg" alt="react"></img>
+        </div>
+
+
+
+        <h1 className="mobileHeader">Back-End</h1>
+        <div className="mobileBackEnd">
+            <img src={ajax} className="skillsImg ajaxImg" alt="ajax"></img>
+            <img src={api} className="skillsImg apiImg" alt="api"></img>
+            <img src={json} className="skillsImg jsonImg" alt="json"></img>
+            <grid-item></grid-item>
+            <img src={node} className="skillsImg nodeImg" alt="node"></img>
+  
+        </div>
+
+
+
+        <h1 className="mobileHeader">Database</h1>
+        <div className="mobileDB">
+        <img
+              src={firebase}
+              className="skillsImg firebaseImg imgResize"
+              alt="firebase"
+              ></img>
+            <img
+              src={mongodb}
+              className="skillsImg mongoImg"
+              alt="mongodb"
+              ></img>
+            <img src={mysql} className="skillsImg imgResize" alt="mysql"></img>
+        </div>
+    </div>
+  </div>
+
+  {/* End of Mobile Divs */}
+
         <div style={{...Style2, ...Style3}} onMouseEnter={this.toggleHover1} onMouseLeave={this.toggleHover1} className="databaseWrapper">
           <h1>Database</h1>
-          <div class="database">
+          <div className="database">
             <img src={mysql} className="skillsImg imgResize" alt="mysql"></img>
             <grid-item></grid-item>
             <img
               src={mongodb}
               className="skillsImg mongoImg"
               alt="mongodb"
-            ></img>
+              ></img>
 
             <grid-item></grid-item>
             <img

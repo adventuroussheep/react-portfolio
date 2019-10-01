@@ -50,6 +50,7 @@
     .plantifyOverlay{
         margin-top: 20px;
         margin-bottom: 4vw;
+        margin-left: 20px;
         position: relative;
         z-index: 1;
         // overflow: hidden;
@@ -134,4 +135,42 @@
         opacity: 0;
 
     }
+}
+
+@media screen and (max-width: 700px){
+    .Wrapper{ 
+        display: grid;
+        width: 100vw;
+        grid-template-columns: auto;
+        grid-template-rows: auto 15vw 15vw auto;
+        // grid-gap: 2vw;  
+        align-content: center;
+        // margin-left: 50vw;
+        
+    }    
+    // .plantifyOverlay{
+    //     margin-top: 20px;
+    //     margin-bottom: 4vw;
+    //     margin-left: 30vw;
+    //     position: relative;
+    //     z-index: 1;
+    //     // overflow: hidden;
+    //     height: 10vw;
+    //     width: 50vw;
+    // }
+    // .projectImg{
+
+    //     margin-left: 30vw;
+
+    //     // height: 10vw;
+    //     width: 50vw;
+    //     height: 50vw;
+    // }
+    // .projectInfo{
+    //     margin-top: 5vw;
+    //     // margin-left: 50vw;
+    //     font-family: 'Lexend Deca', sans-serif;
+    //     font-size: calc(0.4rem + .5vw);
+    //     text-align: center;
+    // }
 }
