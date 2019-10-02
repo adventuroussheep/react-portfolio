@@ -192,6 +192,7 @@
 
 .mobileFrontEnd{
     align-items: center;
+    // margin-left: 5%;
     display: grid;
     grid-template-rows: auto;
     grid-template-columns: 33% 33% 33%;
@@ -233,7 +234,7 @@
         // background: url("../../Assests/Images/borah.jpg");
         // background-size: cover;
         // background-position: center;
-        width: 105%;
+        width: 100%;
         // filter: brightness(50%);
         // z-index: 1;
     }

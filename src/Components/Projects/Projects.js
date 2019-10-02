@@ -130,7 +130,7 @@ class Projects extends React.Component {
                 <div className="projectContainer">
                 <img src={react} style={invis} className="techImg" alt="react"></img>
                 <span><p className="projectInfo"><bold>WORK IN PROGRESS</bold><br/>My latest projects code will be here. Please know that this not a complete project but your more than welcome to see whats going on.</p></span>
-                    <img className="projectImg" src={Construction} alt="coming soon"></img>
+                    <img className="projectImg bottomImg" src={Construction} alt="coming soon"></img>
                     </div>
                 </div>
             </div>

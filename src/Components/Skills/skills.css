@@ -272,7 +272,7 @@
 @media screen and (max-width: 700px) {
   .mobileBackground {
     position: relative;
-    width: 105%;
+    width: 100%;
   }
   .mobileBackground::before {
     content: "";

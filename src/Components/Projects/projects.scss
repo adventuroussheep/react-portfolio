@@ -140,10 +140,9 @@
         // width: 100%;
         grid-template-columns: auto;
         grid-template-rows: auto
-        40vw 40vw auto auto 40vw 40vw auto auto 40vw auto;
+        40vw 40vw auto auto 40vw 40vw auto auto 40vw 40vw;
         align-content: center;
-        width: 105%;
-        
+        width: 100%;
     }    
     .plantifyOverlay{
         width: 100vw!important;
@@ -157,6 +156,10 @@
         // margin-left: vw;
         width: 70vw!important;
         height: 34vw!important;
+    }
+    .bottomImg{
+        margin-top: 10vw!important;
+        margin-left: -10vw!important;
     }
     span{
         margin-top: 5vw!important;
