@@ -179,6 +179,8 @@
     display: none;
     text-align: center;
     width: 100vw;
+    // position: relative;
+    position: bottom;
 }
 
 .mobileHeader{
@@ -218,22 +220,20 @@
     justify-items: center;
     z-index: 5;
     position: relative;
+    padding-bottom: 50px;
 }
 
 
 // Media Query
 
 @media screen and (max-width: 700px){
-    .skillsWrapper{
-        grid-template-rows: auto;
-        grid-template-columns: 33% 33% 33%;
-    }
+
     .mobileBackground{
         position: relative;
         // background: url("../../Assests/Images/borah.jpg");
-        background-size: cover;
-        background-position: center;
-        width: 100vw;
+        // background-size: cover;
+        // background-position: center;
+        width: 105%;
         // filter: brightness(50%);
         // z-index: 1;
     }
@@ -254,13 +254,16 @@
     .firebaseImg{
         margin-left: 11%;
     }
-    .skillsBackground{
+    .backgroundOverlay{
+        display: none;
+    }
+    .sceneClass{
         display: none;
     }
     .databaseWrapper, .frontEndWrapper, .backEndWrapper{
         display: none;
     }
     .mobileWrapper{
-        display: inline;
+        display: initial;
     }
   }

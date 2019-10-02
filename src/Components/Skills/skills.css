@@ -211,6 +211,7 @@
   display: none;
   text-align: center;
   width: 100vw;
+  position: bottom;
 }
 
 .mobileHeader {
@@ -265,20 +266,13 @@
   justify-items: center;
   z-index: 5;
   position: relative;
+  padding-bottom: 50px;
 }
 
 @media screen and (max-width: 700px) {
-  .skillsWrapper {
-    -ms-grid-rows: auto;
-        grid-template-rows: auto;
-    -ms-grid-columns: 33% 33% 33%;
-        grid-template-columns: 33% 33% 33%;
-  }
   .mobileBackground {
     position: relative;
-    background-size: cover;
-    background-position: center;
-    width: 100vw;
+    width: 105%;
   }
   .mobileBackground::before {
     content: "";
@@ -298,14 +292,17 @@
   .firebaseImg {
     margin-left: 11%;
   }
-  .skillsBackground {
+  .backgroundOverlay {
+    display: none;
+  }
+  .sceneClass {
     display: none;
   }
   .databaseWrapper, .frontEndWrapper, .backEndWrapper {
     display: none;
   }
   .mobileWrapper {
-    display: inline;
+    display: initial;
   }
 }
 /*# sourceMappingURL=skills.css.map */

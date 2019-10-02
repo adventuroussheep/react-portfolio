@@ -96,31 +96,7 @@ class Skills extends React.Component {
     return (
       <div>
 
-        {/* Parallax Effect */}
-        <ul id="scene" className="sceneClass">
-      <div className="skillsBackground layer" data-depth="0.1">
-        </div>
-        </ul>
-      <div className="backgroundOverlay">
-      
-      {/* <div>
-
-        <div className="container">
-
-      <ul id="scene">
-      <div className="layer" data-depth="0.4" id="bg" >
-        </div>
-      <li className="layer" data-depth="0.2"><img className="" src={node} alt="node"/></li>
-        <li className="layer" data-depth="0.8"><img className="" src={node} alt="node"/></li>
-        <li className="layer" data-depth="0.2"><img className="" src={node} alt="node"/></li>
-      </ul>
-      </div>
-      </div> */}
-
-        <div className="skillsWrapper">
-
-
-{/* Mobile Divs */}
+        {/* Mobile Divs */}
       <div className="mobileWrapper">
         <div className="mobileBackground">
 
@@ -171,6 +147,84 @@ class Skills extends React.Component {
         </div>
     </div>
   </div>
+
+  {/* End of Mobile Divs */}
+
+        {/* Parallax Effect */}
+        <ul id="scene" className="sceneClass">
+      <div className="skillsBackground layer" data-depth="0.1">
+        </div>
+        </ul>
+      <div className="backgroundOverlay">
+      
+      {/* <div>
+
+        <div className="container">
+
+      <ul id="scene">
+      <div className="layer" data-depth="0.4" id="bg" >
+        </div>
+      <li className="layer" data-depth="0.2"><img className="" src={node} alt="node"/></li>
+        <li className="layer" data-depth="0.8"><img className="" src={node} alt="node"/></li>
+        <li className="layer" data-depth="0.2"><img className="" src={node} alt="node"/></li>
+      </ul>
+      </div>
+      </div> */}
+
+        <div className="skillsWrapper">
+
+
+{/* Mobile Divs */}
+      {/* <div className="mobileWrapper">
+        <div className="mobileBackground">
+
+        <h1 className="mobileHeader">Front-End</h1>
+        <div className="mobileFrontEnd">
+        <img src={bootstrap} className="skillsImg" alt="bootstrap"></img>
+    
+            <img src={css} className="skillsImg cssImg" alt="css"></img>
+            <img src={cssgrid} className="skillsImg cssGridImg" alt="cssgrid"></img>
+            <img src={html} className="skillsImg htmlImg" alt="html"></img>
+            <img src={javascript} className="skillsImg jsImg" alt="javascript"></img>
+            <img src={jquery} className="skillsImg jQueryImg" alt="jquery"></img>
+            <img src={materialui} className="skillsImg muImg" alt="materialui"></img>
+            <img src={sass} className="skillsImg sassImg" alt="sass"></img>
+            <img src={react} className="skillsImg reactImg" alt="react"></img>
+        </div>
+
+
+
+        <h1 className="mobileHeader">Back-End</h1>
+        <div className="mobileBackEnd">
+          <div>
+            <img src={ajax} className="skillsImg ajaxImg" alt="ajax"></img>
+            <p>Ajax</p>
+          </div>
+            <img src={api} className="skillsImg apiImg" alt="api"></img>
+            <img src={json} className="skillsImg jsonImg" alt="json"></img>
+            <grid-item></grid-item>
+            <img src={node} className="skillsImg nodeImg" alt="node"></img>
+  
+        </div>
+
+
+
+        <h1 className="mobileHeader">Database</h1>
+        <div className="mobileDB">
+        <img
+              src={firebase}
+              className="skillsImg firebaseImg imgResize"
+              alt="firebase"
+              ></img>
+            <img
+              src={mongodb}
+              className="skillsImg mongoImg"
+              alt="mongodb"
+              ></img>
+            <img src={mysql} className="skillsImg imgResize" alt="mysql"></img>
+        </div>
+    </div>
+  </div> */}
 
   {/* End of Mobile Divs */}
 
