@@ -65,9 +65,20 @@
 	color: white;
 	cursor: pointer;
 }
+.navNameMoble{
+	color: white;
+	cursor: pointer;
+	display: none;
+}
 
 @media screen and (max-width: 700px){
 	.navbar{
-		width: 95%;
+		width: 100%;
+	}
+	.navName{
+		display: none;
+	}
+	.navNameMoble{
+		display: initial;
 	}
 }

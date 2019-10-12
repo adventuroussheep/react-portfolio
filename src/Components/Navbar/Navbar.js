@@ -14,6 +14,9 @@ class Navbar extends React.Component {
             <div className="navName">
               Jacob Haas
               </div>
+              <div className="navNameMoble">
+              jHaas
+              </div>
         </Link>
 
         <div className="">
