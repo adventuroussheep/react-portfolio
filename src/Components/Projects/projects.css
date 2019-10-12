@@ -59,6 +59,7 @@
   color: white;
   height: calc(15vw + 1px);
   width: calc(32vw + 1px);
+  cursor: pointer;
   left: 0;
   top: 0;
   z-index: 4;
@@ -153,11 +154,18 @@
     margin-left: 12vw;
     width: calc(70vw + 1px) !important;
     height: calc(34vw + 3px) !important;
+    visibility: initial !important;
+    background-color: rgba(0, 0, 0, 0.5);
   }
   .techImg {
     margin-top: 5vw !important;
     width: 10vw !important;
     position: absolute;
+    visibility: initial !important;
+    opacity: 1 !important;
+  }
+  .spaceHolder {
+    opacity: 0 !important;
   }
   .projectInfo {
     margin-top: 10vw !important;

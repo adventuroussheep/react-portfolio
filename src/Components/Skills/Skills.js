@@ -229,7 +229,7 @@ class Skills extends React.Component {
   {/* End of Mobile Divs */}
 
         <div style={{...Style2, ...Style3}} onMouseEnter={this.toggleHover1} onMouseLeave={this.toggleHover1} className="databaseWrapper">
-          <h1>Database</h1>
+          <h2>Database</h2>
           <div className="database">
             <img src={mysql} className="skillsImg imgResize" alt="mysql"></img>
             <grid-item></grid-item>
@@ -251,7 +251,7 @@ class Skills extends React.Component {
 
 
         <div style={{...Style1, ...Style3}} onMouseEnter={this.toggleHover2} onMouseLeave={this.toggleHover2}  className="frontEndWrapper" id="feId">
-          <h1>Front-End</h1>
+          <h2>Front-End</h2>
           <div className="frontEnd">
             <grid-item></grid-item>
             <grid-item></grid-item>
@@ -285,7 +285,7 @@ class Skills extends React.Component {
 
 
         <div style={{...Style1, ...Style2}} onMouseEnter={this.toggleHover3} onMouseLeave={this.toggleHover3} className="backEndWrapper" id="beId">
-          <h1>Back-End</h1>
+          <h2>Back-End</h2>
           <div className="backEnd">
           <grid-item></grid-item>
             <img src={ajax} className="skillsImg ajaxImg" alt="ajax"></img>

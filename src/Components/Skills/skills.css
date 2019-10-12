@@ -24,6 +24,7 @@
   min-height: calc(20vw + 300px);
   top: calc(-20vw + -300px);
   margin-bottom: calc(-20vw + -300px);
+  overflow: hidden;
 }
 
 .skillsImg {
@@ -64,6 +65,7 @@
   transition: transform 1.5s ease-in-out;
   transition: transform 1.5s ease-in-out, -webkit-transform 1.5s ease-in-out;
   height: auto;
+  color: #F4F4F4;
 }
 
 .databaseWrapper:hover {
@@ -91,6 +93,7 @@
 }
 
 .frontEndWrapper {
+  color: #F4F4F4;
   text-align: center;
   left: 33vw;
   width: 33vw;
@@ -160,6 +163,7 @@
 }
 
 .backEndWrapper {
+  color: #F4F4F4;
   text-align: center;
   width: 33vw;
   left: 66vw;

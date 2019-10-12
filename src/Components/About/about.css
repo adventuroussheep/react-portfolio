@@ -17,6 +17,8 @@
   margin: 0 auto;
   margin-left: 37.5vw;
   margin-top: 150px;
+  max-width: 500px;
+  max-height: 500px;
 }
 
 #contactPhone,

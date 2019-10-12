@@ -30,6 +30,7 @@
     // height: 50vw;
     top: calc(-20vw + -300px);
     margin-bottom: calc(-20vw + -300px);
+    overflow: hidden;
 }
 
 // Transition times for all skill images
@@ -65,6 +66,7 @@
     -webkit-transition: transform 1.5s ease-in-out;
     transition: transform 1.5s ease-in-out;
     height: auto;
+    color: #F4F4F4;
     
     &:hover{
         // background-color: black;
@@ -89,6 +91,7 @@
 
 .frontEndWrapper{
     // max-width: 33%;
+    color: #F4F4F4;
     text-align: center;
     // border: 2px solid black;
     left: 33vw;
@@ -143,6 +146,7 @@
 
 
 .backEndWrapper{
+    color: #F4F4F4;
     text-align: center;
     width: 33vw;
     left: 66vw;
@@ -231,12 +235,7 @@
 
     .mobileBackground{
         position: relative;
-        // background: url("../../Assests/Images/borah.jpg");
-        // background-size: cover;
-        // background-position: center;
         width: 100%;
-        // filter: brightness(50%);
-        // z-index: 1;
     }
     .mobileBackground::before{
         content: "";
