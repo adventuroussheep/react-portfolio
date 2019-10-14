@@ -1,7 +1,10 @@
 #aboutWrapper {
   background-image: url("../../Assests/Images/akOpt.jpg");
-  background-size: cover;
   width: 100%;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 #aboutWrapperAnimation {
@@ -127,6 +130,17 @@
   }
   #aboutWrapper {
     width: 100%;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .aboutText {
+    font-size: calc(0.8rem + .7vw);
+  }
+  #profilePic {
+    width: 15vw;
+    height: 15vw;
+    margin-left: 42vw;
   }
 }
 /*# sourceMappingURL=about.css.map */

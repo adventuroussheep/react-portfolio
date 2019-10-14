@@ -50,7 +50,7 @@ class AboutPage extends React.Component {
 
               <div id="contactEmail" className="hvr-float-shadow" >
                 {/* <br> */}
-                <a href={"mailto:" + "jacob_haas@live.com"}>
+                <a href={"mailto:" + "jacob@jhaas.dev"}>
                 <img
                   className="linkHover"
                   id="emailImg"

@@ -289,12 +289,22 @@
     left: 0;
     width: 100%;
     height: 100%;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
   }
   .skillsImg {
     margin-top: 20px;
   }
   .firebaseImg {
     margin-left: 11%;
+  }
+  .apiImg {
+    margin-bottom: 40%;
+  }
+  .jsonImg {
+    margin-bottom: 40%;
   }
   .backgroundOverlay {
     display: none;

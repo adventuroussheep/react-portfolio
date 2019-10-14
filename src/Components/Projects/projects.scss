@@ -45,6 +45,7 @@
     background-size: cover;
     background-position: center;
     padding-bottom: 50px;
+    
 
 
     .plantifyOverlay{
@@ -56,12 +57,7 @@
         // overflow: hidden;
         height: 10vw;
         width: 32vw;
-        display: flex;
-
-        .projectContainer{
-            // height: 10vw;
-        }
-        
+        display: flex;  
     } 
 
     .plantifyOverlay:hover span{
@@ -133,6 +129,26 @@
     }
 }
 
+.plantifyLeft{
+ margin-left: 4%;
+}
+
+.jamSeshLeft{
+    margin-left: 12%;
+}
+
+.rpgLeft{
+    margin-left: 18%;
+}
+
+.trainLeft{
+    margin-left: 10%;
+}
+
+.memoryLeft{
+    margin-left: 25%;
+}
+
 @media screen and (max-width: 700px){
     .Wrapper{ 
         display: grid;
@@ -142,6 +158,10 @@
         40vw 40vw auto auto 40vw 40vw auto auto 40vw 40vw;
         align-content: center;
         width: 100%;
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
     }    
     .plantifyOverlay{
         width: 100vw!important;

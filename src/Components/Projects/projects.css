@@ -122,6 +122,26 @@
   opacity: 0;
 }
 
+.plantifyLeft {
+  margin-left: 4%;
+}
+
+.jamSeshLeft {
+  margin-left: 12%;
+}
+
+.rpgLeft {
+  margin-left: 18%;
+}
+
+.trainLeft {
+  margin-left: 10%;
+}
+
+.memoryLeft {
+  margin-left: 25%;
+}
+
 @media screen and (max-width: 700px) {
   .Wrapper {
     display: -ms-grid;
@@ -133,6 +153,10 @@
     -ms-flex-line-pack: center;
         align-content: center;
     width: 100%;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
   }
   .plantifyOverlay {
     width: 100vw !important;

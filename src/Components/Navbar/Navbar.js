@@ -29,7 +29,7 @@ class Navbar extends React.Component {
         <button className="buttonClass">Projects</button>&nbsp;&nbsp;&nbsp;
           </Link>
 
-          <a href={pdf} download="Jacob_Haas_Resume" target="_blank" className="buttonClass">Resume</a>
+          <a href={pdf} download="Jacob_Haas_Resume" className="buttonClass">Resume</a>
 
         </div>
         {/* <button type="button" className="btn btn-info">Info</button> */}
