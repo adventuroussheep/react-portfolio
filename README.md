@@ -4,7 +4,7 @@
 
 This is my published portfolio code and contains many animations with a focus on front-end frameworks. The goal was to make an immersive website with many small samples of effects that employers/clients may want on their website. The site uses both open source effects that have been modified to fit the sites needs as well as hand crafted animations. 
 
-![](src/Assests/images/website.JPG)
+![](src/Assests/Images/website.JPG)
 
 ## Start
 
